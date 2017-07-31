@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Project" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/usr/include/eigen3" />
+					<Add directory="/usr/local/include/pcl-1.8" />
+					<Add directory="/usr/local/include/vtk-7.1" />
+					<Add directory="src" />
+					<Add directory="include" />
+					<Add directory="/usr/include/ni" />
+					<Add directory="../../LIBRARY/src" />
+					<Add directory="../../LIBRARY/include" />
+				</Compiler>
+				<Linker>
+					<Add library="/usr/local/lib/libpcl_2d.so" />
+					<Add library="/usr/local/lib/libpcl_common.so" />
+					<Add library="/usr/local/lib/libpcl_features.so" />
+					<Add library="/usr/local/lib/libpcl_filters.so" />
+					<Add library="/usr/local/lib/libpcl_io.so" />
+					<Add library="/usr/local/lib/libpcl_io_ply.so" />
+					<Add library="/usr/local/lib/libpcl_kdtree.so" />
+					<Add library="/usr/local/lib/libpcl_keypoints.so" />
+					<Add library="/usr/local/lib/libpcl_ml.so" />
+					<Add library="/usr/local/lib/libpcl_octree.so" />
+					<Add library="/usr/local/lib/libpcl_outofcore.so" />
+					<Add library="/usr/local/lib/libpcl_people.so" />
+					<Add library="/usr/local/lib/libpcl_recognition.so" />
+					<Add library="/usr/local/lib/libpcl_registration.so" />
+					<Add library="/usr/local/lib/libpcl_sample_consensus.so" />
+					<Add library="/usr/local/lib/libpcl_search.so" />
+					<Add library="/usr/local/lib/libpcl_segmentation.so" />
+					<Add library="/usr/local/lib/libpcl_stereo.so" />
+					<Add library="/usr/local/lib/libpcl_surface.so" />
+					<Add library="/usr/local/lib/libpcl_tracking.so" />
+					<Add library="/usr/local/lib/libpcl_visualization.so" />
+					<Add library="/usr/local/lib/libvtkalglib-7.1.so" />
+					<Add library="/usr/local/lib/libvtkChartsCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonColor-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonComputationalGeometry-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonDataModel-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonExecutionModel-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonMath-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonMisc-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonSystem-7.1.so" />
+					<Add library="/usr/local/lib/libvtkCommonTransforms-7.1.so" />
+					<Add library="/usr/local/lib/libvtkDICOMParser-7.1.so" />
+					<Add library="/usr/local/lib/libvtkDomainsChemistry-7.1.so" />
+					<Add library="/usr/local/lib/libvtkDomainsChemistryOpenGL2-7.1.so" />
+					<Add library="/usr/local/lib/libvtkexoIIc-7.1.so" />
+					<Add library="/usr/local/lib/libvtkexpat-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersAMR-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersExtraction-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersFlowPaths-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersGeneral-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersGeneric-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersGeometry-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersHybrid-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersHyperTree-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersImaging-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersModeling-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersParallel-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersParallelImaging-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersPoints-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersProgrammable-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersSelection-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersSMP-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersSources-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersStatistics-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersTexture-7.1.so" />
+					<Add library="/usr/local/lib/libvtkFiltersVerdict-7.1.so" />
+					<Add library="/usr/local/lib/libvtkfreetype-7.1.so" />
+					<Add library="/usr/local/lib/libvtkGeovisCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkgl2ps-7.1.so" />
+					<Add library="/usr/local/lib/libvtkglew-7.1.so" />
+					<Add library="/usr/local/lib/libvtkhdf5-7.1.so" />
+					<Add library="/usr/local/lib/libvtkhdf5_hl-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingColor-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingFourier-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingGeneral-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingHybrid-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingMath-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingMorphological-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingSources-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingStatistics-7.1.so" />
+					<Add library="/usr/local/lib/libvtkImagingStencil-7.1.so" />
+					<Add library="/usr/local/lib/libvtkInfovisCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkInfovisLayout-7.1.so" />
+					<Add library="/usr/local/lib/libvtkInteractionImage-7.1.so" />
+					<Add library="/usr/local/lib/libvtkInteractionStyle-7.1.so" />
+					<Add library="/usr/local/lib/libvtkInteractionWidgets-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOAMR-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOEnSight-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOExodus-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOExport-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOGeometry-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOImage-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOImport-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOInfovis-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOLegacy-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOLSDyna-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOMINC-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOMovie-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIONetCDF-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOParallel-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOParallelXML-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOPLY-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOSQL-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOTecplotTable-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOVideo-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOXML-7.1.so" />
+					<Add library="/usr/local/lib/libvtkIOXMLParser-7.1.so" />
+					<Add library="/usr/local/lib/libvtkjpeg-7.1.so" />
+					<Add library="/usr/local/lib/libvtkjsoncpp-7.1.so" />
+					<Add library="/usr/local/lib/libvtklibxml2-7.1.so" />
+					<Add library="/usr/local/lib/libvtkmetaio-7.1.so" />
+					<Add library="/usr/local/lib/libvtkNetCDF-7.1.so" />
+					<Add library="/usr/local/lib/libvtkNetCDF_cxx-7.1.so" />
+					<Add library="/usr/local/lib/libvtkoggtheora-7.1.so" />
+					<Add library="/usr/local/lib/libvtkParallelCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkpng-7.1.so" />
+					<Add library="/usr/local/lib/libvtkproj4-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingAnnotation-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingContext2D-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingContextOpenGL2-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingFreeType-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingImage-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingLabel-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingLOD-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingOpenGL2-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingVolume-7.1.so" />
+					<Add library="/usr/local/lib/libvtkRenderingVolumeOpenGL2-7.1.so" />
+					<Add library="/usr/local/lib/libvtksqlite-7.1.so" />
+					<Add library="/usr/local/lib/libvtksys-7.1.so" />
+					<Add library="/usr/local/lib/libvtktiff-7.1.so" />
+					<Add library="/usr/local/lib/libvtkverdict-7.1.so" />
+					<Add library="/usr/local/lib/libvtkViewsContext2D-7.1.so" />
+					<Add library="/usr/local/lib/libvtkViewsCore-7.1.so" />
+					<Add library="/usr/local/lib/libvtkViewsInfovis-7.1.so" />
+					<Add library="/usr/local/lib/libvtkzlib-7.1.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libpthread.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_atomic.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_chrono.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_context.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_coroutine.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_date_time.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_filesystem.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_graph.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_graph_parallel.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_iostreams.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_locale.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_log.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_log_setup.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_c99.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_c99f.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_c99l.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_tr1.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_tr1f.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_math_tr1l.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_mpi.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_mpi_python.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_mpi_python-py27.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_mpi_python-py35.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_prg_exec_monitor.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_program_options.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_python.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_python-py27.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_python-py35.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_random.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_regex.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_serialization.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_signals.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_system.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_thread.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_timer.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_wave.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_wserialization.so" />
+					<Add library="/usr/lib/libOpenNI.jni.so" />
+					<Add library="/usr/lib/libOpenNI.so" />
+					<Add directory="/usr/lib" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../LIBRARY/include/Calculations.h" />
+		<Unit filename="../../LIBRARY/include/CustomStructures.h" />
+		<Unit filename="../../LIBRARY/include/Filtering.h" />
+		<Unit filename="../../LIBRARY/include/IO.h" />
+		<Unit filename="../../LIBRARY/include/KinectControl.h" />
+		<Unit filename="../../LIBRARY/include/Object.h" />
+		<Unit filename="../../LIBRARY/include/Processing.h" />
+		<Unit filename="../../LIBRARY/include/SegmentationAlgorithms.h" />
+		<Unit filename="../../LIBRARY/include/Transformations.h" />
+		<Unit filename="../../LIBRARY/include/Viewer.h" />
+		<Unit filename="../../LIBRARY/src/Calculations.cpp" />
+		<Unit filename="../../LIBRARY/src/Filtering.cpp" />
+		<Unit filename="../../LIBRARY/src/IO.cpp" />
+		<Unit filename="../../LIBRARY/src/KinectControl.cpp" />
+		<Unit filename="../../LIBRARY/src/Object.cpp" />
+		<Unit filename="../../LIBRARY/src/Processing.cpp" />
+		<Unit filename="../../LIBRARY/src/SegmentationAlgorithms.cpp" />
+		<Unit filename="../../LIBRARY/src/Transformations.cpp" />
+		<Unit filename="../../LIBRARY/src/Viewer.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

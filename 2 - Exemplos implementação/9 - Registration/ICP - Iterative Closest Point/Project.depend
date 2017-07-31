@@ -1,0 +1,3767 @@
+# depslib dependency file v1.0
+1486561464 source:/home/jr/Project/src/gera_pcd.cpp
+	<iostream>
+	<pcl/io/pcd_io.h>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/pcd_io.h
+	<pcl/point_cloud.h>
+	<pcl/io/file_io.h>
+	<pcl/io/impl/pcd_io.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/point_cloud.h
+	<Eigen/StdVector>
+	<Eigen/Geometry>
+	<pcl/PCLHeader.h>
+	<pcl/exceptions.h>
+	<pcl/point_traits.h>
+
+1450298928 /usr/include/eigen3/Eigen/StdVector
+	"Core"
+	<vector>
+	"src/StlSupport/StdVector.h"
+
+1450298928 /usr/include/eigen3/Eigen/Core
+	"src/Core/util/DisableStupidWarnings.h"
+	<new>
+	"src/Core/util/Macros.h"
+	<complex>
+	"src/Core/util/MKL_support.h"
+	<malloc.h>
+	<immintrin.h>
+	<emmintrin.h>
+	<xmmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<immintrin.h>
+	<altivec.h>
+	<altivec.h>
+	<arm_neon.h>
+	<vector_types.h>
+	<omp.h>
+	<cerrno>
+	<cstddef>
+	<cstdlib>
+	<cmath>
+	<cassert>
+	<functional>
+	<iosfwd>
+	<cstring>
+	<string>
+	<limits>
+	<climits>
+	<algorithm>
+	<iostream>
+	<intrin.h>
+	"src/Core/util/Constants.h"
+	"src/Core/util/Meta.h"
+	"src/Core/util/ForwardDeclarations.h"
+	"src/Core/util/StaticAssert.h"
+	"src/Core/util/XprHelper.h"
+	"src/Core/util/Memory.h"
+	"src/Core/NumTraits.h"
+	"src/Core/MathFunctions.h"
+	"src/Core/SpecialFunctions.h"
+	"src/Core/GenericPacketMath.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/AVX/PacketMath.h"
+	"src/Core/arch/AVX/MathFunctions.h"
+	"src/Core/arch/AVX/Complex.h"
+	"src/Core/arch/AVX/TypeCasting.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/SSE/TypeCasting.h"
+	"src/Core/arch/AltiVec/PacketMath.h"
+	"src/Core/arch/AltiVec/MathFunctions.h"
+	"src/Core/arch/AltiVec/Complex.h"
+	"src/Core/arch/NEON/PacketMath.h"
+	"src/Core/arch/NEON/MathFunctions.h"
+	"src/Core/arch/NEON/Complex.h"
+	"src/Core/arch/CUDA/PacketMath.h"
+	"src/Core/arch/CUDA/MathFunctions.h"
+	"src/Core/arch/Default/Settings.h"
+	"src/Core/functors/BinaryFunctors.h"
+	"src/Core/functors/UnaryFunctors.h"
+	"src/Core/functors/NullaryFunctors.h"
+	"src/Core/functors/StlFunctors.h"
+	"src/Core/functors/AssignmentFunctors.h"
+	"src/Core/DenseCoeffsBase.h"
+	"src/Core/DenseBase.h"
+	"src/Core/MatrixBase.h"
+	"src/Core/EigenBase.h"
+	"src/Core/Product.h"
+	"src/Core/CoreEvaluators.h"
+	"src/Core/AssignEvaluator.h"
+	"src/Core/Assign.h"
+	"src/Core/ArrayBase.h"
+	"src/Core/util/BlasUtil.h"
+	"src/Core/DenseStorage.h"
+	"src/Core/NestByValue.h"
+	"src/Core/ReturnByValue.h"
+	"src/Core/NoAlias.h"
+	"src/Core/PlainObjectBase.h"
+	"src/Core/Matrix.h"
+	"src/Core/Array.h"
+	"src/Core/CwiseBinaryOp.h"
+	"src/Core/CwiseUnaryOp.h"
+	"src/Core/CwiseNullaryOp.h"
+	"src/Core/CwiseUnaryView.h"
+	"src/Core/SelfCwiseBinaryOp.h"
+	"src/Core/Dot.h"
+	"src/Core/StableNorm.h"
+	"src/Core/Stride.h"
+	"src/Core/MapBase.h"
+	"src/Core/Map.h"
+	"src/Core/Ref.h"
+	"src/Core/Block.h"
+	"src/Core/VectorBlock.h"
+	"src/Core/Transpose.h"
+	"src/Core/DiagonalMatrix.h"
+	"src/Core/Diagonal.h"
+	"src/Core/DiagonalProduct.h"
+	"src/Core/Redux.h"
+	"src/Core/Visitor.h"
+	"src/Core/Fuzzy.h"
+	"src/Core/IO.h"
+	"src/Core/Swap.h"
+	"src/Core/CommaInitializer.h"
+	"src/Core/GeneralProduct.h"
+	"src/Core/Solve.h"
+	"src/Core/Inverse.h"
+	"src/Core/SolverBase.h"
+	"src/Core/PermutationMatrix.h"
+	"src/Core/Transpositions.h"
+	"src/Core/TriangularMatrix.h"
+	"src/Core/SelfAdjointView.h"
+	"src/Core/products/GeneralBlockPanelKernel.h"
+	"src/Core/products/Parallelizer.h"
+	"src/Core/ProductEvaluators.h"
+	"src/Core/products/GeneralMatrixVector.h"
+	"src/Core/products/GeneralMatrixMatrix.h"
+	"src/Core/SolveTriangular.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular.h"
+	"src/Core/products/SelfadjointMatrixVector.h"
+	"src/Core/products/SelfadjointMatrixMatrix.h"
+	"src/Core/products/SelfadjointProduct.h"
+	"src/Core/products/SelfadjointRank2Update.h"
+	"src/Core/products/TriangularMatrixVector.h"
+	"src/Core/products/TriangularMatrixMatrix.h"
+	"src/Core/products/TriangularSolverMatrix.h"
+	"src/Core/products/TriangularSolverVector.h"
+	"src/Core/BandMatrix.h"
+	"src/Core/CoreIterators.h"
+	"src/Core/BooleanRedux.h"
+	"src/Core/Select.h"
+	"src/Core/VectorwiseOp.h"
+	"src/Core/Random.h"
+	"src/Core/Replicate.h"
+	"src/Core/Reverse.h"
+	"src/Core/ArrayWrapper.h"
+	"src/Core/products/GeneralMatrixMatrix_MKL.h"
+	"src/Core/products/GeneralMatrixVector_MKL.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular_MKL.h"
+	"src/Core/products/SelfadjointMatrixMatrix_MKL.h"
+	"src/Core/products/SelfadjointMatrixVector_MKL.h"
+	"src/Core/products/TriangularMatrixMatrix_MKL.h"
+	"src/Core/products/TriangularMatrixVector_MKL.h"
+	"src/Core/products/TriangularSolverMatrix_MKL.h"
+	"src/Core/Assign_MKL.h"
+	"src/Core/GlobalFunctions.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/Macros.h
+	<cstdlib>
+	<iostream>
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h
+	<mkl.h>
+	<mkl_lapacke.h>
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/Constants.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/Meta.h
+	<cfloat>
+	<math_constants.h>
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/Memory.h
+	<unistd.h>
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/NumTraits.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/DenseBase.h
+	"../plugins/BlockMethods.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h
+	"../plugins/CommonCwiseUnaryOps.h"
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/EigenBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Product.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Assign.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
+	"../plugins/CommonCwiseUnaryOps.h"
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/ArrayCwiseUnaryOps.h"
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+	"../plugins/ArrayCwiseBinaryOps.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/DenseStorage.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/NestByValue.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/NoAlias.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Matrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Array.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Dot.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/StableNorm.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Stride.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/MapBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Map.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Ref.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Block.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Transpose.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Diagonal.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Redux.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Visitor.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/IO.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Swap.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Solve.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Inverse.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Transpositions.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Select.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Random.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Replicate.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Reverse.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+
+1450298928 /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h
+	"details.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/StlSupport/details.h
+
+1450298928 /usr/include/eigen3/Eigen/Geometry
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"SVD"
+	"LU"
+	<limits>
+	"src/Geometry/OrthoMethods.h"
+	"src/Geometry/EulerAngles.h"
+	"src/Geometry/Homogeneous.h"
+	"src/Geometry/RotationBase.h"
+	"src/Geometry/Rotation2D.h"
+	"src/Geometry/Quaternion.h"
+	"src/Geometry/AngleAxis.h"
+	"src/Geometry/Transform.h"
+	"src/Geometry/Translation.h"
+	"src/Geometry/Scaling.h"
+	"src/Geometry/Hyperplane.h"
+	"src/Geometry/ParametrizedLine.h"
+	"src/Geometry/AlignedBox.h"
+	"src/Geometry/Umeyama.h"
+	"src/Geometry/arch/Geometry_SSE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/SVD
+	"QR"
+	"Householder"
+	"Jacobi"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/SVD/UpperBidiagonalization.h"
+	"src/SVD/SVDBase.h"
+	"src/SVD/JacobiSVD.h"
+	"src/SVD/BDCSVD.h"
+	"src/SVD/JacobiSVD_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/QR
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"src/QR/HouseholderQR.h"
+	"src/QR/FullPivHouseholderQR.h"
+	"src/QR/ColPivHouseholderQR.h"
+	"src/QR/HouseholderQR_MKL.h"
+	"src/QR/ColPivHouseholderQR_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/Cholesky
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Cholesky/LLT.h"
+	"src/Cholesky/LDLT.h"
+	"src/Cholesky/LLT_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Cholesky/LLT_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+	<iostream>
+
+1450298928 /usr/include/eigen3/Eigen/Jacobi
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Jacobi/Jacobi.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
+
+1450298928 /usr/include/eigen3/Eigen/Householder
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Householder/Householder.h"
+	"src/Householder/HouseholderSequence.h"
+	"src/Householder/BlockHouseholder.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Householder/Householder.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h
+
+1450298928 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
+
+1450298928 /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
+
+1450298928 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
+
+1450298928 /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+	"../Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
+
+1450298928 /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
+
+1450298928 /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
+
+1450298928 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/LU
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/Kernel.h"
+	"src/misc/Image.h"
+	"src/LU/FullPivLU.h"
+	"src/LU/PartialPivLU.h"
+	"src/LU/PartialPivLU_MKL.h"
+	"src/LU/Determinant.h"
+	"src/LU/InverseImpl.h"
+	"src/LU/arch/Inverse_SSE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/misc/Kernel.h
+
+1450298928 /usr/include/eigen3/Eigen/src/misc/Image.h
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/Determinant.h
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
+
+1450298928 /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h
+
+1452467701 /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Transform.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Translation.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Scaling.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PCLHeader.h
+	<string>
+	<vector>
+	<boost/shared_ptr.hpp>
+	<pcl/pcl_macros.h>
+	<ostream>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/pcl_macros.h
+	<pcl/pcl_config.h>
+	<boost/cstdint.hpp>
+	<cstdlib>
+	<iostream>
+	<stdarg.h>
+	<stdio.h>
+	<math.h>
+	<math.h>
+	<cmath>
+	<cmath>
+	<stdio.h>
+	<math.h>
+
+1493019128 /usr/local/include/pcl-1.8/pcl/pcl_config.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/exceptions.h
+	<stdexcept>
+	<sstream>
+	<pcl/pcl_macros.h>
+	<boost/current_function.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/point_traits.h
+	"pcl/pcl_macros.h"
+	<pcl/PCLPointField.h>
+	<boost/type_traits/remove_all_extents.hpp>
+	<boost/type_traits/is_same.hpp>
+	<boost/mpl/assert.hpp>
+	<boost/mpl/bool.hpp>
+	<Eigen/Core>
+	<Eigen/src/StlSupport/details.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PCLPointField.h
+	<string>
+	<vector>
+	<ostream>
+	<boost/shared_ptr.hpp>
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/file_io.h
+	<pcl/pcl_macros.h>
+	<pcl/common/io.h>
+	<pcl/io/boost.h>
+	<cmath>
+	<sstream>
+	<pcl/PolygonMesh.h>
+	<pcl/TextureMesh.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/io.h
+	<string>
+	<pcl/pcl_base.h>
+	<pcl/PointIndices.h>
+	<pcl/conversions.h>
+	<pcl/exceptions.h>
+	<locale>
+	<pcl/common/impl/io.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/pcl_base.h
+	<pcl/pcl_macros.h>
+	<boost/shared_ptr.hpp>
+	<Eigen/StdVector>
+	<Eigen/Core>
+	<pcl/point_cloud.h>
+	<pcl/PointIndices.h>
+	<pcl/PCLPointCloud2.h>
+	<pcl/impl/pcl_base.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PointIndices.h
+	<string>
+	<vector>
+	<ostream>
+	<pcl/PCLHeader.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PCLPointCloud2.h
+	<string>
+	<vector>
+	<ostream>
+	<boost/detail/endian.hpp>
+	<pcl/PCLHeader.h>
+	<pcl/PCLPointField.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/impl/pcl_base.hpp
+	<pcl/pcl_base.h>
+	<pcl/console/print.h>
+	<cstddef>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/console/print.h
+	<stdio.h>
+	<stdarg.h>
+	<pcl/pcl_exports.h>
+	<pcl/pcl_config.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/pcl_exports.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/conversions.h
+	<pcl/PCLPointField.h>
+	<pcl/PCLPointCloud2.h>
+	<pcl/PCLImage.h>
+	<pcl/point_cloud.h>
+	<pcl/point_traits.h>
+	<pcl/for_each_type.h>
+	<pcl/exceptions.h>
+	<pcl/console/print.h>
+	<boost/foreach.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PCLImage.h
+	<string>
+	<vector>
+	<ostream>
+	<pcl/PCLHeader.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/for_each_type.h
+	<boost/mpl/is_sequence.hpp>
+	<boost/mpl/begin_end.hpp>
+	<boost/mpl/next_prior.hpp>
+	<boost/mpl/deref.hpp>
+	<boost/mpl/assert.hpp>
+	<boost/mpl/remove_if.hpp>
+	<boost/mpl/contains.hpp>
+	<boost/mpl/not.hpp>
+	<boost/mpl/aux_/unwrap.hpp>
+	<boost/type_traits/is_same.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/io.hpp
+	<pcl/common/concatenate.h>
+	<pcl/common/copy_point.h>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/concatenate.h
+	<pcl/conversions.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/copy_point.h
+	<pcl/common/impl/copy_point.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/copy_point.hpp
+	<pcl/point_types.h>
+	<pcl/point_traits.h>
+	<pcl/for_each_type.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/point_types.h
+	<pcl/pcl_macros.h>
+	<bitset>
+	<pcl/register_point_struct.h>
+	<boost/mpl/contains.hpp>
+	<boost/mpl/fold.hpp>
+	<boost/mpl/vector.hpp>
+	<pcl/impl/point_types.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/register_point_struct.h
+	<pcl/pcl_macros.h>
+	<pcl/point_traits.h>
+	<boost/mpl/vector.hpp>
+	<boost/preprocessor/seq/enum.hpp>
+	<boost/preprocessor/seq/for_each.hpp>
+	<boost/preprocessor/seq/transform.hpp>
+	<boost/preprocessor/cat.hpp>
+	<boost/preprocessor/comparison.hpp>
+	<boost/utility.hpp>
+	<boost/type_traits.hpp>
+	<stddef.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/impl/point_types.hpp
+	<Eigen/Core>
+	<ostream>
+	<pcl/common/point_tests.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/point_tests.h
+	<Eigen/src/StlSupport/details.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/boost.h
+	<boost/version.hpp>
+	<boost/numeric/conversion/cast.hpp>
+	<boost/thread/mutex.hpp>
+	<boost/thread/condition.hpp>
+	<boost/thread.hpp>
+	<boost/thread/thread.hpp>
+	<boost/filesystem.hpp>
+	<boost/bind.hpp>
+	<boost/cstdint.hpp>
+	<boost/function.hpp>
+	<boost/tuple/tuple.hpp>
+	<boost/shared_ptr.hpp>
+	<boost/weak_ptr.hpp>
+	<boost/mpl/fold.hpp>
+	<boost/mpl/inherit.hpp>
+	<boost/mpl/inherit_linearly.hpp>
+	<boost/mpl/joint_view.hpp>
+	<boost/mpl/transform.hpp>
+	<boost/mpl/vector.hpp>
+	<boost/algorithm/string.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<boost/chrono.hpp>
+	<boost/tokenizer.hpp>
+	<boost/foreach.hpp>
+	<boost/shared_array.hpp>
+	<boost/interprocess/sync/file_lock.hpp>
+	<boost/interprocess/permissions.hpp>
+	<boost/iostreams/device/mapped_file.hpp>
+	<boost/signals2.hpp>
+	<boost/signals2/slot.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/PolygonMesh.h
+	<string>
+	<vector>
+	<ostream>
+	<pcl/PCLHeader.h>
+	<pcl/PCLPointCloud2.h>
+	<pcl/Vertices.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/Vertices.h
+	<string>
+	<vector>
+	<ostream>
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/TextureMesh.h
+	<Eigen/Core>
+	<string>
+	<pcl/PCLPointCloud2.h>
+	<pcl/Vertices.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/impl/pcd_io.hpp
+	<fstream>
+	<fcntl.h>
+	<string>
+	<stdlib.h>
+	<pcl/io/boost.h>
+	<pcl/console/print.h>
+	<pcl/io/pcd_io.h>
+	<io.h>
+	<windows.h>
+	<sys/mman.h>
+	<pcl/io/lzf.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/lzf.h
+	<pcl/pcl_macros.h>
+
+1488038589 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/Filtering.cpp
+	"Filtering.h"
+
+1487714277 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/passthrough.h
+	<pcl/filters/filter_indices.h>
+	<pcl/filters/impl/passthrough.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/filter_indices.h
+	<pcl/filters/filter.h>
+	<pcl/filters/impl/filter_indices.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/filter.h
+	<pcl/pcl_base.h>
+	<pcl/common/io.h>
+	<pcl/conversions.h>
+	<pcl/filters/boost.h>
+	<cfloat>
+	<pcl/PointIndices.h>
+	<pcl/filters/impl/filter.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/boost.h
+	<boost/random.hpp>
+	<boost/random/normal_distribution.hpp>
+	<boost/shared_ptr.hpp>
+	<boost/make_shared.hpp>
+	<boost/dynamic_bitset.hpp>
+	<boost/mpl/size.hpp>
+	<boost/unordered_map.hpp>
+	<boost/fusion/sequence/intrinsic/at_key.hpp>
+	<boost/bind.hpp>
+	<boost/function.hpp>
+	<boost/optional.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/filter.hpp
+	<pcl/pcl_macros.h>
+	<pcl/filters/filter.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/filter_indices.hpp
+	<pcl/pcl_macros.h>
+	<pcl/filters/filter_indices.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/passthrough.hpp
+	<pcl/filters/passthrough.h>
+	<pcl/common/io.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/voxel_grid.h
+	<pcl/filters/boost.h>
+	<pcl/filters/filter.h>
+	<map>
+	<pcl/filters/impl/voxel_grid.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
+	<pcl/common/centroid.h>
+	<pcl/common/common.h>
+	<pcl/common/io.h>
+	<pcl/filters/voxel_grid.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/centroid.h
+	<pcl/point_cloud.h>
+	<pcl/point_traits.h>
+	<pcl/PointIndices.h>
+	<pcl/cloud_iterator.h>
+	<pcl/common/impl/accumulators.hpp>
+	<pcl/common/impl/centroid.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/cloud_iterator.h
+	<pcl/point_cloud.h>
+	<pcl/PointIndices.h>
+	<pcl/correspondence.h>
+	<pcl/impl/cloud_iterator.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/correspondence.h
+	<boost/shared_ptr.hpp>
+	<Eigen/StdVector>
+	<Eigen/Geometry>
+	<pcl/pcl_exports.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/impl/cloud_iterator.hpp
+	<pcl/cloud_iterator.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/accumulators.hpp
+	<map>
+	<boost/mpl/filter_view.hpp>
+	<boost/fusion/include/mpl.hpp>
+	<boost/fusion/include/for_each.hpp>
+	<boost/fusion/include/as_vector.hpp>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/centroid.hpp
+	<pcl/common/centroid.h>
+	<pcl/conversions.h>
+	<boost/mpl/size.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/common.h
+	<pcl/pcl_base.h>
+	<cfloat>
+	<pcl/common/impl/common.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/common.hpp
+	<pcl/point_types.h>
+	<pcl/common/common.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/statistical_outlier_removal.h
+	<pcl/filters/filter_indices.h>
+	<pcl/search/pcl_search.h>
+	<pcl/filters/impl/statistical_outlier_removal.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/pcl_search.h
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/search/octree.h>
+	<pcl/search/organized.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/search.h
+	<pcl/point_cloud.h>
+	<pcl/for_each_type.h>
+	<pcl/common/concatenate.h>
+	<pcl/common/copy_point.h>
+	<pcl/search/impl/search.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/impl/search.hpp
+	<pcl/search/search.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/kdtree.h
+	<pcl/search/search.h>
+	<pcl/kdtree/kdtree_flann.h>
+	<pcl/search/impl/kdtree.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/kdtree/kdtree_flann.h
+	<pcl/kdtree/kdtree.h>
+	<pcl/kdtree/flann.h>
+	<boost/shared_array.hpp>
+	<pcl/kdtree/impl/kdtree_flann.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/kdtree/kdtree.h
+	<limits.h>
+	<pcl/pcl_macros.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/common/io.h>
+	<pcl/common/copy_point.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/point_representation.h
+	<pcl/point_types.h>
+	<pcl/pcl_macros.h>
+	<pcl/for_each_type.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/kdtree/flann.h
+	<flann/flann.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/kdtree/impl/kdtree_flann.hpp
+	<cstdio>
+	<pcl/kdtree/kdtree_flann.h>
+	<pcl/kdtree/flann.h>
+	<pcl/console/print.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/impl/kdtree.hpp
+	<pcl/search/kdtree.h>
+	<pcl/search/impl/search.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/octree.h
+	<pcl/search/search.h>
+	<pcl/octree/octree_search.h>
+	<pcl/octree/impl/octree_search.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_search.h
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	"octree_pointcloud.h"
+	<pcl/octree/impl/octree_search.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_pointcloud.h
+	"octree_base.h"
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<queue>
+	<vector>
+	<algorithm>
+	<iostream>
+	<pcl/octree/impl/octree_pointcloud.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_base.h
+	<cstddef>
+	<vector>
+	"octree_nodes.h"
+	"octree_container.h"
+	"octree_key.h"
+	"octree_iterator.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_nodes.h
+	<cstddef>
+	<assert.h>
+	<cstring>
+	<string.h>
+	<Eigen/Core>
+	<pcl/pcl_macros.h>
+	"octree_container.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_container.h
+	<string.h>
+	<vector>
+	<cstddef>
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_key.h
+	<string>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/octree_iterator.h
+	<cstddef>
+	<vector>
+	<deque>
+	"octree_nodes.h"
+	"octree_key.h"
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<iterator>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/impl/octree_pointcloud.hpp
+	<vector>
+	<assert.h>
+	<pcl/common/common.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/octree/impl/octree_search.hpp
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<pcl/common/common.h>
+	<assert.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/organized.h
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<pcl/search/search.h>
+	<pcl/common/eigen.h>
+	<algorithm>
+	<queue>
+	<vector>
+	<pcl/common/projection_matrix.h>
+	<pcl/search/impl/organized.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/eigen.h
+	<cmath>
+	<pcl/ModelCoefficients.h>
+	<Eigen/StdVector>
+	<Eigen/Core>
+	<Eigen/Eigenvalues>
+	<Eigen/Geometry>
+	<Eigen/SVD>
+	<Eigen/LU>
+	<Eigen/Dense>
+	<Eigen/Eigenvalues>
+	<pcl/common/impl/eigen.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/ModelCoefficients.h
+	<string>
+	<vector>
+	<ostream>
+	<pcl/PCLHeader.h>
+
+1450298928 /usr/include/eigen3/Eigen/Eigenvalues
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"LU"
+	"Geometry"
+	"src/Eigenvalues/Tridiagonalization.h"
+	"src/Eigenvalues/RealSchur.h"
+	"src/Eigenvalues/EigenSolver.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver.h"
+	"src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"
+	"src/Eigenvalues/HessenbergDecomposition.h"
+	"src/Eigenvalues/ComplexSchur.h"
+	"src/Eigenvalues/ComplexEigenSolver.h"
+	"src/Eigenvalues/RealQZ.h"
+	"src/Eigenvalues/GeneralizedEigenSolver.h"
+	"src/Eigenvalues/MatrixBaseEigenvalues.h"
+	"src/Eigenvalues/RealSchur_MKL.h"
+	"src/Eigenvalues/ComplexSchur_MKL.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h
+	"./HessenbergDecomposition.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h
+	"./RealSchur.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+	"./Tridiagonalization.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+	"./Tridiagonalization.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h
+	"./HessenbergDecomposition.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+	"./ComplexSchur.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+	"./RealQZ.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1450298928 /usr/include/eigen3/Eigen/Dense
+	"Core"
+	"LU"
+	"Cholesky"
+	"QR"
+	"SVD"
+	"Geometry"
+	"Eigenvalues"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/eigen.hpp
+	<pcl/console/print.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/projection_matrix.h
+	<pcl/common/eigen.h>
+	<pcl/console/print.h>
+	<pcl/common/impl/projection_matrix.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/projection_matrix.hpp
+	<pcl/cloud_iterator.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/search/impl/organized.hpp
+	<pcl/search/organized.h>
+	<pcl/common/eigen.h>
+	<pcl/common/time.h>
+	<Eigen/Eigenvalues>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/time.h
+	<cmath>
+	<queue>
+	<string>
+	<boost/date_time/posix_time/posix_time.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/statistical_outlier_removal.hpp
+	<pcl/filters/statistical_outlier_removal.h>
+	<pcl/common/io.h>
+
+1488662062 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1487855945 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/Processing.cpp
+	"Processing.h"
+
+1487822444 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/Processing.h
+	<vector>
+	<pcl/io/pcd_io.h>
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/transforms.h
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<pcl/common/centroid.h>
+	<pcl/common/eigen.h>
+	<pcl/PointIndices.h>
+	<pcl/common/impl/transforms.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/impl/transforms.hpp
+
+1487378664 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/IO.cpp
+	"IO.h"
+
+1487378487 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/IO.h
+	<pcl/io/openni_grabber.h>
+	<pcl/visualization/pcl_visualizer.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<string>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_grabber.h
+	<pcl/pcl_config.h>
+	<pcl/io/eigen.h>
+	<pcl/io/boost.h>
+	<pcl/io/grabber.h>
+	<pcl/io/openni_camera/openni_driver.h>
+	<pcl/io/openni_camera/openni_device_kinect.h>
+	<pcl/io/openni_camera/openni_image.h>
+	<pcl/io/openni_camera/openni_depth_image.h>
+	<pcl/io/openni_camera/openni_ir_image.h>
+	<string>
+	<deque>
+	<pcl/common/synchronizer.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/eigen.h
+	<Eigen/Core>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/grabber.h
+	<pcl/pcl_config.h>
+	<map>
+	<iostream>
+	<string>
+	<typeinfo>
+	<vector>
+	<sstream>
+	<pcl/pcl_macros.h>
+	<pcl/io/boost.h>
+	<pcl/exceptions.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_driver.h
+	<pcl/pcl_config.h>
+	<string>
+	<vector>
+	<map>
+	"openni.h"
+	"openni_exception.h"
+	"openni_device.h"
+	<pcl/io/boost.h>
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni.h
+	<pcl/pcl_config.h>
+	<XnOS.h>
+	<XnCppWrapper.h>
+	<XnVersion.h>
+
+1495131746 /usr/include/ni/XnOS.h
+	"XnPlatform.h"
+	"XnMacros.h"
+	"XnStatusCodes.h"
+	"XnOSStrings.h"
+	"XnOSMemory.h"
+	"Win32/XnOSWin32.h"
+	"Linux-x86/XnOSLinux-x86.h"
+	"ARC/XnOSARC.h"
+	<new>
+
+1495131746 /usr/include/ni/XnPlatform.h
+	"Win32/XnPlatformWin32.h"
+	"Android-Arm/XnPlatformAndroid-Arm.h"
+	"Linux-x86/XnPlatformLinux-x86.h"
+	"Linux-Arm/XnPlatformLinux-Arm.h"
+	"ARC/XnPlatformARC.h"
+	"MacOSX/XnPlatformMacOSX.h"
+
+1495131746 /usr/include/ni/Linux-x86/XnPlatformLinux-x86.h
+	<unistd.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+
+1495131746 /usr/include/ni/Linux-Arm/XnPlatformLinux-Arm.h
+	"../Linux-x86/XnPlatformLinux-x86.h"
+
+1495131746 /usr/include/ni/MacOSX/XnPlatformMacOSX.h
+	"../Linux-x86/XnPlatformLinux-x86.h"
+	<sys/time.h>
+
+1495131746 /usr/include/ni/XnMacros.h
+	"XnStatusCodes.h"
+
+1495131746 /usr/include/ni/XnStatusCodes.h
+	"XnStatus.h"
+
+1495131746 /usr/include/ni/XnStatus.h
+	"XnPlatform.h"
+
+1495131746 /usr/include/ni/XnOSStrings.h
+	"XnPlatform.h"
+	<stdarg.h>
+
+1495131746 /usr/include/ni/XnOSMemory.h
+	"XnPlatform.h"
+
+1495131746 /usr/include/ni/Linux-x86/XnOSLinux-x86.h
+	<sys/types.h>
+	<stdarg.h>
+	<time.h>
+	<pthread.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1495131746 /usr/include/ni/XnCppWrapper.h
+	<XnOpenNI.h>
+	<XnCodecIDs.h>
+
+1495131746 /usr/include/ni/XnOpenNI.h
+	"XnTypes.h"
+	"XnContext.h"
+	"XnLicensing.h"
+	"XnUtils.h"
+	"XnPrdNodeInfo.h"
+	"XnQueries.h"
+	"XnPrdNode.h"
+	"XnEnumerationErrors.h"
+	"XnVersion.h"
+	"XnStatusCodes.h"
+	"XnStatus.h"
+
+1495131746 /usr/include/ni/XnTypes.h
+	<XnStatus.h>
+	<XnOS.h>
+
+1495131746 /usr/include/ni/XnContext.h
+	<XnTypes.h>
+	<XnQueries.h>
+	<XnPrdNodeInfoList.h>
+
+1495131746 /usr/include/ni/XnQueries.h
+	"XnTypes.h"
+
+1495131746 /usr/include/ni/XnPrdNodeInfoList.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnLicensing.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnUtils.h
+	<XnTypes.h>
+	<XnModuleInterface.h>
+
+1495131746 /usr/include/ni/XnModuleInterface.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnPrdNodeInfo.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnPrdNode.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnEnumerationErrors.h
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnVersion.h
+	"XnPlatform.h"
+
+1495131746 /usr/include/ni/XnCodecIDs.h
+	"XnTypes.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_exception.h
+	<pcl/pcl_config.h>
+	<cstdarg>
+	<cstdio>
+	<exception>
+	<string>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_device.h
+	<pcl/pcl_config.h>
+	<map>
+	<vector>
+	<utility>
+	"openni_exception.h"
+	"openni.h"
+	<pcl/io/boost.h>
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_device_kinect.h
+	<pcl/pcl_config.h>
+	"openni_device.h"
+	"openni_driver.h"
+	"openni_image_bayer_grbg.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_image_bayer_grbg.h
+	<pcl/pcl_config.h>
+	<pcl/pcl_macros.h>
+	"openni_image.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_image.h
+	<pcl/pcl_config.h>
+	<pcl/pcl_exports.h>
+	"openni.h"
+	"openni_exception.h"
+	<pcl/io/boost.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_depth_image.h
+	<pcl/pcl_config.h>
+	"openni.h"
+	<pcl/pcl_exports.h>
+	"openni_exception.h"
+	<pcl/io/boost.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/openni_camera/openni_ir_image.h
+	<pcl/pcl_macros.h>
+	"openni.h"
+	"openni_exception.h"
+	<pcl/io/boost.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/synchronizer.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/pcl_visualizer.h
+	<pcl/correspondence.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/PolygonMesh.h>
+	<pcl/TextureMesh.h>
+	<pcl/console/print.h>
+	<pcl/visualization/common/actor_map.h>
+	<pcl/visualization/common/common.h>
+	<pcl/visualization/point_cloud_geometry_handlers.h>
+	<pcl/visualization/point_cloud_color_handlers.h>
+	<pcl/visualization/point_picking_event.h>
+	<pcl/visualization/area_picking_event.h>
+	<pcl/visualization/interactor_style.h>
+	<pcl/visualization/impl/pcl_visualizer.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/actor_map.h
+	<pcl/visualization/point_cloud_handlers.h>
+	<vector>
+	<map>
+	<pcl/PCLPointCloud2.h>
+	<boost/unordered_map.hpp>
+	<vtkLODActor.h>
+	<vtkSmartPointer.h>
+	<pcl/PCLPointCloud2.h>
+	<pcl/visualization/boost.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/point_cloud_handlers.h
+	<pcl/visualization/point_cloud_geometry_handlers.h>
+	<pcl/visualization/point_cloud_color_handlers.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/point_cloud_geometry_handlers.h
+	<pcl/point_cloud.h>
+	<pcl/common/io.h>
+	<vtkSmartPointer.h>
+	<vtkPoints.h>
+	<vtkFloatArray.h>
+	<pcl/visualization/impl/point_cloud_geometry_handlers.hpp>
+
+1479149881 /usr/local/include/vtk-7.1/vtkSmartPointer.h
+	"vtkSmartPointerBase.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkSmartPointerBase.h
+	"vtkCommonCoreModule.h"
+	"vtkObjectBase.h"
+
+1493014190 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkObjectBase.h
+	"vtkCommonCoreModule.h"
+	"vtkIndent.h"
+	"vtkSystemIncludes.h"
+	"vtkAtomicTypes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkIndent.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkSystemIncludes.h
+	"vtkWin32Header.h"
+	"vtkIOStreamFwd.h"
+	"vtkIOStream.h"
+	"vtkType.h"
+	"vtkWrappingHints.h"
+	"vtkOStreamWrapper.h"
+	"vtkOStrStreamWrapper.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<mem.h>
+	<search.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkWin32Header.h
+	"vtkConfigure.h"
+	"vtkABI.h"
+	<windows.h>
+
+1493014185 /usr/local/include/vtk-7.1/vtkConfigure.h
+	"vtkVersionMacros.h"
+
+1493014185 /usr/local/include/vtk-7.1/vtkVersionMacros.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkABI.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkIOStreamFwd.h
+	"vtkConfigure.h"
+	<iosfwd>
+
+1479149881 /usr/local/include/vtk-7.1/vtkIOStream.h
+	"vtkConfigure.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+
+1479149881 /usr/local/include/vtk-7.1/vtkType.h
+	"vtkConfigure.h"
+	"vtk_kwiml.h"
+
+1493014171 /usr/local/include/vtk-7.1/vtk_kwiml.h
+	"vtkkwiml/abi.h"
+	"vtkkwiml/int.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkkwiml/abi.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkkwiml/int.h
+	"abi.h"
+	<stdint.h>
+	<inttypes.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkWrappingHints.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkOStreamWrapper.h
+	"vtkCommonCoreModule.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkOStrStreamWrapper.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkAtomicTypes.h
+	"vtkAtomic.h"
+	"vtkType.h"
+
+1493014185 /usr/local/include/vtk-7.1/vtkAtomic.h
+	"vtkCommonCoreModule.h"
+	"vtkAtomicTypeConcepts.h"
+	"vtkConfigure.h"
+	"vtkSystemIncludes.h"
+	"vtkType.h"
+	<cstddef>
+	<libkern/OSAtomic.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkAtomicTypeConcepts.h
+	<limits>
+
+1479149881 /usr/local/include/vtk-7.1/vtkPoints.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+	"vtkDataArray.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkObject.h
+	"vtkCommonCoreModule.h"
+	"vtkObjectBase.h"
+	"vtkSetGet.h"
+	"vtkTimeStamp.h"
+	"vtkWeakPointerBase.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkSetGet.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+	<math.h>
+	<typeinfo>
+
+1479149881 /usr/local/include/vtk-7.1/vtkTimeStamp.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkWeakPointerBase.h
+	"vtkCommonCoreModule.h"
+	"vtkObjectBase.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataArray.h
+	"vtkCommonCoreModule.h"
+	"vtkAbstractArray.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAbstractArray.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+	"vtkVariant.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkVariant.h
+	"vtkCommonCoreModule.h"
+	"vtkType.h"
+	"vtkSystemIncludes.h"
+	"vtkSetGet.h"
+	"vtkStdString.h"
+	"vtkUnicodeString.h"
+	"vtkVariantInlineOperators.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkStdString.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+	<string>
+
+1479149881 /usr/local/include/vtk-7.1/vtkUnicodeString.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+	<string>
+	<vector>
+
+1479149881 /usr/local/include/vtk-7.1/vtkVariantInlineOperators.h
+	<climits>
+
+1479149881 /usr/local/include/vtk-7.1/vtkFloatArray.h
+	"vtkCommonCoreModule.h"
+	"vtkDataArray.h"
+	"vtkAOSDataArrayTemplate.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAOSDataArrayTemplate.h
+	"vtkCommonCoreModule.h"
+	"vtkGenericDataArray.h"
+	"vtkBuffer.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkGenericDataArray.h
+	"vtkDataArray.h"
+	"vtkSmartPointer.h"
+	"vtkTypeTraits.h"
+	"vtkGenericDataArrayLookupHelper.h"
+	<cassert>
+	"vtkGenericDataArray.txx"
+
+1479149881 /usr/local/include/vtk-7.1/vtkTypeTraits.h
+	"vtkSystemIncludes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkGenericDataArrayLookupHelper.h
+	<algorithm>
+	"vtkIdList.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkIdList.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkGenericDataArray.txx
+	"vtkGenericDataArray.h"
+	"vtkIdList.h"
+	"vtkMath.h"
+	"vtkVariantCast.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkMath.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+	"vtkTypeTraits.h"
+	"vtkSmartPointer.h"
+	"vtkMathConfigure.h"
+	<cassert>
+
+1493014187 /usr/local/include/vtk-7.1/vtkMathConfigure.h
+	<cmath>
+	<float.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkVariantCast.h
+	"vtkUnicodeString.h"
+	<typeinfo>
+
+1479149881 /usr/local/include/vtk-7.1/vtkBuffer.h
+	"vtkObject.h"
+	"vtkObjectFactory.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkObjectFactory.h
+	"vtkDebugLeaksManager.h"
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDebugLeaksManager.h
+	"vtkCommonCoreModule.h"
+	"vtkSystemIncludes.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/impl/point_cloud_geometry_handlers.hpp
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/point_cloud_color_handlers.h
+	<pcl/point_cloud.h>
+	<pcl/common/io.h>
+	<pcl/visualization/common/common.h>
+	<vtkSmartPointer.h>
+	<vtkDataArray.h>
+	<vtkFloatArray.h>
+	<vtkUnsignedCharArray.h>
+	<pcl/visualization/impl/point_cloud_color_handlers.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/common.h
+	<pcl/pcl_macros.h>
+	<pcl/visualization/eigen.h>
+	<vtkMatrix4x4.h>
+	<vtkSmartPointer.h>
+	<vtkLookupTable.h>
+	<pcl/visualization/common/impl/common.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/eigen.h
+	<Eigen/Geometry>
+	<Eigen/Dense>
+
+1479149881 /usr/local/include/vtk-7.1/vtkMatrix4x4.h
+	"vtkCommonMathModule.h"
+	"vtkObject.h"
+
+1493014190 /usr/local/include/vtk-7.1/vtkCommonMathModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkLookupTable.h
+	"vtkCommonCoreModule.h"
+	"vtkScalarsToColors.h"
+	"vtkUnsignedCharArray.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkScalarsToColors.h
+	"vtkCommonCoreModule.h"
+	"vtkVariant.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkUnsignedCharArray.h
+	"vtkCommonCoreModule.h"
+	"vtkDataArray.h"
+	"vtkAOSDataArrayTemplate.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/impl/common.hpp
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/impl/point_cloud_color_handlers.hpp
+	<set>
+	<map>
+	<pcl/pcl_macros.h>
+	<pcl/common/colors.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/colors.h
+	<pcl/pcl_macros.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkLODActor.h
+	"vtkRenderingLODModule.h"
+	"vtkActor.h"
+
+1493014356 /usr/local/include/vtk-7.1/vtkRenderingLODModule.h
+	"vtkRenderingCoreModule.h"
+
+1493014196 /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
+	"vtkFiltersCoreModule.h"
+	"vtkAutoInit.h"
+
+1493014193 /usr/local/include/vtk-7.1/vtkFiltersCoreModule.h
+	"vtkAutoInit.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAutoInit.h
+	"vtkDebugLeaksManager.h"
+	"vtkTimeStamp.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkActor.h
+	"vtkRenderingCoreModule.h"
+	"vtkProp3D.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkProp3D.h
+	"vtkRenderingCoreModule.h"
+	"vtkProp.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkProp.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/boost.h
+	<boost/function.hpp>
+	<boost/shared_array.hpp>
+	<boost/signals2.hpp>
+	<boost/shared_ptr.hpp>
+	<boost/algorithm/string.hpp>
+	<boost/algorithm/string/split.hpp>
+	<boost/algorithm/string/classification.hpp>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<boost/unordered_map.hpp>
+	<boost/thread/mutex.hpp>
+	<boost/thread/thread.hpp>
+	<boost/foreach.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<boost/filesystem.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/point_picking_event.h
+	<pcl/pcl_macros.h>
+	<vector>
+	<vtkCommand.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkCommand.h
+	"vtkCommonCoreModule.h"
+	"vtkObjectBase.h"
+	"vtkObject.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/area_picking_event.h
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/interactor_style.h
+	<pcl/console/print.h>
+	<pcl/visualization/common/actor_map.h>
+	<pcl/visualization/common/ren_win_interact_map.h>
+	<pcl/visualization/keyboard_event.h>
+	<pcl/visualization/mouse_event.h>
+	<pcl/visualization/point_picking_event.h>
+	<pcl/visualization/area_picking_event.h>
+	<boost/signals2/signal.hpp>
+	<vtkInteractorStyleRubberBandPick.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/ren_win_interact_map.h
+	<map>
+	<string>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/keyboard_event.h
+	<string>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/mouse_event.h
+	<pcl/visualization/keyboard_event.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkInteractorStyleRubberBandPick.h
+	"vtkInteractionStyleModule.h"
+	"vtkInteractorStyleTrackballCamera.h"
+
+1493014244 /usr/local/include/vtk-7.1/vtkInteractionStyleModule.h
+	"vtkRenderingCoreModule.h"
+	"vtkRenderingCoreModule.h"
+	"vtkAutoInit.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkInteractorStyleTrackballCamera.h
+	"vtkInteractionStyleModule.h"
+	"vtkInteractorStyle.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkInteractorStyle.h
+	"vtkRenderingCoreModule.h"
+	"vtkInteractorObserver.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkInteractorObserver.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/impl/pcl_visualizer.hpp
+	<vtkVersion.h>
+	<vtkSmartPointer.h>
+	<vtkCellArray.h>
+	<vtkLeaderActor2D.h>
+	<vtkVectorText.h>
+	<vtkAlgorithmOutput.h>
+	<vtkFollower.h>
+	<vtkMath.h>
+	<vtkSphereSource.h>
+	<vtkProperty2D.h>
+	<vtkDataSetSurfaceFilter.h>
+	<vtkPointData.h>
+	<vtkPolyDataMapper.h>
+	<vtkProperty.h>
+	<vtkMapper.h>
+	<vtkCellData.h>
+	<vtkDataSetMapper.h>
+	<vtkRenderer.h>
+	<vtkRendererCollection.h>
+	<vtkAppendPolyData.h>
+	<vtkTextProperty.h>
+	<vtkLODActor.h>
+	<vtkLineSource.h>
+	<pcl/visualization/common/shapes.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkVersion.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+	"vtkVersionMacros.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCellArray.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+	"vtkIdTypeArray.h"
+	"vtkCell.h"
+
+1493014192 /usr/local/include/vtk-7.1/vtkCommonDataModelModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkIdTypeArray.h
+	"vtkCommonCoreModule.h"
+	"vtkDataArray.h"
+	"vtkAOSDataArrayTemplate.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCell.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+	"vtkIdList.h"
+	"vtkCellType.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCellType.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkLeaderActor2D.h
+	"vtkRenderingAnnotationModule.h"
+	"vtkActor2D.h"
+
+1493014244 /usr/local/include/vtk-7.1/vtkRenderingAnnotationModule.h
+	"vtkRenderingCoreModule.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkActor2D.h
+	"vtkRenderingCoreModule.h"
+	"vtkProp.h"
+	"vtkCoordinate.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCoordinate.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkVectorText.h
+	"vtkRenderingFreeTypeModule.h"
+	"vtkPolyDataAlgorithm.h"
+
+1493014197 /usr/local/include/vtk-7.1/vtkRenderingFreeTypeModule.h
+	"vtkRenderingCoreModule.h"
+	"vtkRenderingCoreModule.h"
+	"vtkAutoInit.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkPolyDataAlgorithm.h
+	"vtkCommonExecutionModelModule.h"
+	"vtkAlgorithm.h"
+	"vtkPolyData.h"
+
+1493014192 /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkAlgorithm.h
+	"vtkCommonExecutionModelModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkPolyData.h
+	"vtkCommonDataModelModule.h"
+	"vtkPointSet.h"
+	"vtkCellTypes.h"
+	"vtkCellLinks.h"
+	"vtkCellArray.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkPointSet.h
+	"vtkCommonDataModelModule.h"
+	"vtkDataSet.h"
+	"vtkPoints.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataSet.h
+	"vtkCommonDataModelModule.h"
+	"vtkDataObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataObject.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCellTypes.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+	"vtkIntArray.h"
+	"vtkUnsignedCharArray.h"
+	"vtkCellType.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkIntArray.h
+	"vtkCommonCoreModule.h"
+	"vtkDataArray.h"
+	"vtkAOSDataArrayTemplate.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCellLinks.h
+	"vtkCommonDataModelModule.h"
+	"vtkAbstractCellLinks.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAbstractCellLinks.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAlgorithmOutput.h
+	"vtkCommonExecutionModelModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkFollower.h
+	"vtkRenderingCoreModule.h"
+	"vtkActor.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkSphereSource.h
+	"vtkFiltersSourcesModule.h"
+	"vtkPolyDataAlgorithm.h"
+
+1493014195 /usr/local/include/vtk-7.1/vtkFiltersSourcesModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkProperty2D.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataSetSurfaceFilter.h
+	"vtkFiltersGeometryModule.h"
+	"vtkPolyDataAlgorithm.h"
+
+1493014195 /usr/local/include/vtk-7.1/vtkFiltersGeometryModule.h
+
+1479149881 /usr/local/include/vtk-7.1/vtkPointData.h
+	"vtkCommonDataModelModule.h"
+	"vtkDataSetAttributes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataSetAttributes.h
+	"vtkCommonDataModelModule.h"
+	"vtkFieldData.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkFieldData.h
+	"vtkCommonDataModelModule.h"
+	"vtkObject.h"
+	"vtkAbstractArray.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkPolyDataMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkMapper.h"
+	"vtkTexture.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkAbstractMapper3D.h"
+	"vtkSystemIncludes.h"
+	"vtkSmartPointer.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAbstractMapper3D.h
+	"vtkRenderingCoreModule.h"
+	"vtkAbstractMapper.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAbstractMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkAlgorithm.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkTexture.h
+	"vtkRenderingCoreModule.h"
+	"vtkImageAlgorithm.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkImageAlgorithm.h
+	"vtkCommonExecutionModelModule.h"
+	"vtkAlgorithm.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkProperty.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCellData.h
+	"vtkCommonDataModelModule.h"
+	"vtkDataSetAttributes.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkDataSetMapper.h
+	"vtkRenderingCoreModule.h"
+	"vtkMapper.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkRenderer.h
+	"vtkRenderingCoreModule.h"
+	"vtkViewport.h"
+	"vtkVolumeCollection.h"
+	"vtkActorCollection.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkViewport.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkVolumeCollection.h
+	"vtkRenderingCoreModule.h"
+	"vtkPropCollection.h"
+	"vtkVolume.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkPropCollection.h
+	"vtkRenderingCoreModule.h"
+	"vtkCollection.h"
+	"vtkProp.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkCollection.h
+	"vtkCommonCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkVolume.h
+	"vtkRenderingCoreModule.h"
+	"vtkProp3D.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkActorCollection.h
+	"vtkRenderingCoreModule.h"
+	"vtkPropCollection.h"
+	"vtkActor.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkRendererCollection.h
+	"vtkRenderingCoreModule.h"
+	"vtkCollection.h"
+	"vtkRenderer.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkAppendPolyData.h
+	"vtkFiltersCoreModule.h"
+	"vtkPolyDataAlgorithm.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkTextProperty.h
+	"vtkRenderingCoreModule.h"
+	"vtkObject.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkLineSource.h
+	"vtkFiltersSourcesModule.h"
+	"vtkPolyDataAlgorithm.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/shapes.h
+	<pcl/ModelCoefficients.h>
+	<pcl/point_cloud.h>
+	<pcl/visualization/eigen.h>
+	<pcl/geometry/planar_polygon.h>
+	<pcl/visualization/common/impl/shapes.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/geometry/planar_polygon.h
+	<pcl/common/eigen.h>
+	<pcl/point_cloud.h>
+	<pcl/ModelCoefficients.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/common/impl/shapes.hpp
+	<vtkSmartPointer.h>
+	<vtkPoints.h>
+	<vtkPolygon.h>
+	<vtkUnstructuredGrid.h>
+
+1479149881 /usr/local/include/vtk-7.1/vtkPolygon.h
+	"vtkCommonDataModelModule.h"
+	"vtkCell.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkUnstructuredGrid.h
+	"vtkCommonDataModelModule.h"
+	"vtkUnstructuredGridBase.h"
+
+1479149881 /usr/local/include/vtk-7.1/vtkUnstructuredGridBase.h
+	"vtkCommonDataModelModule.h"
+	"vtkPointSet.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/console/parse.h
+	<vector>
+	<sstream>
+	<pcl/pcl_macros.h>
+
+1487867910 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/main.cpp
+	<iostream>
+	<string>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<vector>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<sstream>
+	<time.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/normal_3d.h
+	<pcl/features/feature.h>
+	<pcl/common/centroid.h>
+	<pcl/features/impl/normal_3d.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/feature.h
+	<boost/function.hpp>
+	<boost/bind.hpp>
+	<pcl/pcl_base.h>
+	<pcl/search/search.h>
+	<pcl/features/impl/feature.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/impl/feature.hpp
+	<pcl/search/pcl_search.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/impl/normal_3d.hpp
+	<pcl/features/normal_3d.h>
+
+1488662632 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/visualization/cloud_viewer.h>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/region_growing.h
+	<pcl/pcl_base.h>
+	<pcl/search/search.h>
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<list>
+	<math.h>
+	<time.h>
+	<pcl/segmentation/impl/region_growing.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/impl/region_growing.hpp
+	<pcl/segmentation/region_growing.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<queue>
+	<list>
+	<cmath>
+	<time.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/region_growing_rgb.h
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/impl/region_growing_rgb.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/impl/region_growing_rgb.hpp
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<queue>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/visualization/cloud_viewer.h
+	<pcl/visualization/pcl_visualizer.h>
+	<string>
+
+1488662666 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1487336799 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/Transformations.cpp
+	"Transformations.h"
+
+1487336768 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1488662974 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/Calculations.cpp
+	"Calculations.h"
+
+1488662958 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1488662974 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/Calculations.cpp
+	"Calculations.h"
+
+1488662958 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1488662062 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1487714362 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/Filtering.cpp
+	"Filtering.h"
+
+1487714277 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	"CustomStructures.h"
+
+1487378664 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/IO.cpp
+	"IO.h"
+
+1487378487 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/IO.h
+	<pcl/io/openni_grabber.h>
+	<pcl/visualization/pcl_visualizer.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<string>
+	"CustomStructures.h"
+
+1492444577 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Transformations.h"
+
+1487822444 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/Processing.h
+	<vector>
+	<pcl/io/pcd_io.h>
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1489164536 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	"CustomStructures.h"
+
+1489604200 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/Processing.cpp
+	"Processing.h"
+
+1489603973 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1487336799 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/Transformations.cpp
+	"Transformations.h"
+
+1487336768 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/method_types.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/model_types.h
+	<map>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/sac_segmentation.h
+	<pcl/pcl_base.h>
+	<pcl/PointIndices.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/search/search.h>
+	<pcl/segmentation/impl/sac_segmentation.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac.h
+	<pcl/sample_consensus/boost.h>
+	<pcl/sample_consensus/sac_model.h>
+	<ctime>
+	<set>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/boost.h
+	<boost/random.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model.h
+	<cfloat>
+	<ctime>
+	<limits.h>
+	<set>
+	<pcl/console/print.h>
+	<pcl/point_cloud.h>
+	<pcl/sample_consensus/boost.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/search/search.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/impl/sac_segmentation.hpp
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/lmeds.h>
+	<pcl/sample_consensus/mlesac.h>
+	<pcl/sample_consensus/msac.h>
+	<pcl/sample_consensus/ransac.h>
+	<pcl/sample_consensus/rmsac.h>
+	<pcl/sample_consensus/rransac.h>
+	<pcl/sample_consensus/prosac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/sac_model_circle.h>
+	<pcl/sample_consensus/sac_model_circle3d.h>
+	<pcl/sample_consensus/sac_model_cone.h>
+	<pcl/sample_consensus/sac_model_cylinder.h>
+	<pcl/sample_consensus/sac_model_line.h>
+	<pcl/sample_consensus/sac_model_normal_plane.h>
+	<pcl/sample_consensus/sac_model_parallel_plane.h>
+	<pcl/sample_consensus/sac_model_normal_parallel_plane.h>
+	<pcl/sample_consensus/sac_model_parallel_line.h>
+	<pcl/sample_consensus/sac_model_perpendicular_plane.h>
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/sample_consensus/sac_model_sphere.h>
+	<pcl/sample_consensus/sac_model_normal_sphere.h>
+	<pcl/sample_consensus/sac_model_stick.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/lmeds.h
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/lmeds.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/lmeds.hpp
+	<pcl/sample_consensus/lmeds.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/mlesac.h
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/mlesac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/mlesac.hpp
+	<pcl/sample_consensus/mlesac.h>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/msac.h
+	<algorithm>
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/msac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/msac.hpp
+	<pcl/sample_consensus/msac.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/ransac.h
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/ransac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/ransac.hpp
+	<pcl/sample_consensus/ransac.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/rmsac.h
+	<algorithm>
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/rmsac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/rmsac.hpp
+	<pcl/sample_consensus/rmsac.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/rransac.h
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/rransac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/rransac.hpp
+	<pcl/sample_consensus/rransac.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/prosac.h
+	<pcl/sample_consensus/sac.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/impl/prosac.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/prosac.hpp
+	<boost/math/distributions/binomial.hpp>
+	<pcl/sample_consensus/prosac.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_circle.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_circle.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_circle.hpp
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model_circle.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/eigen.h
+	<Eigen/Core>
+	<unsupported/Eigen/NonLinearOptimization>
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/NonLinearOptimization
+	<vector>
+	<Eigen/Core>
+	<Eigen/Jacobi>
+	<Eigen/QR>
+	<unsupported/Eigen/NumericalDiff>
+	"src/NonLinearOptimization/qrsolv.h"
+	"src/NonLinearOptimization/r1updt.h"
+	"src/NonLinearOptimization/r1mpyq.h"
+	"src/NonLinearOptimization/rwupdt.h"
+	"src/NonLinearOptimization/fdjac1.h"
+	"src/NonLinearOptimization/lmpar.h"
+	"src/NonLinearOptimization/dogleg.h"
+	"src/NonLinearOptimization/covar.h"
+	"src/NonLinearOptimization/chkder.h"
+	"src/NonLinearOptimization/HybridNonLinearSolver.h"
+	"src/NonLinearOptimization/LevenbergMarquardt.h"
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/NumericalDiff
+	<Eigen/Core>
+	"src/NumericalDiff/NumericalDiff.h"
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/qrsolv.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1updt.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1mpyq.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/fdjac1.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/lmpar.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/dogleg.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/covar.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/chkder.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_circle3d.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_circle3d.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_circle3d.hpp
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model_circle3d.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_cone.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/pcl_macros.h>
+	<pcl/common/common.h>
+	<pcl/common/distances.h>
+	<limits.h>
+	<pcl/sample_consensus/impl/sac_model_cone.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/distances.h
+	<pcl/common/common.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_cone.hpp
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model_cone.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_cylinder.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/pcl_macros.h>
+	<pcl/common/common.h>
+	<pcl/common/distances.h>
+	<pcl/sample_consensus/impl/sac_model_cylinder.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_cylinder.hpp
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model_cylinder.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_line.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/common/eigen.h>
+	<pcl/sample_consensus/impl/sac_model_line.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_line.hpp
+	<pcl/sample_consensus/sac_model_line.h>
+	<pcl/common/centroid.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_plane.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/sample_consensus/sac_model_perpendicular_plane.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_normal_plane.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_plane.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_plane.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_plane.hpp
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/common/centroid.h>
+	<pcl/common/eigen.h>
+	<pcl/common/concatenate.h>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_perpendicular_plane.h
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/common/common.h>
+	<pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp
+	<pcl/sample_consensus/sac_model_perpendicular_plane.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_plane.hpp
+	<pcl/sample_consensus/sac_model_normal_plane.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_parallel_plane.h
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/common/common.h>
+	<pcl/sample_consensus/impl/sac_model_parallel_plane.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_parallel_plane.hpp
+	<pcl/sample_consensus/sac_model_parallel_plane.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_parallel_plane.h
+	<pcl/sample_consensus/sac_model_normal_plane.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp
+	<pcl/sample_consensus/sac_model_normal_parallel_plane.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_parallel_line.h
+	<pcl/sample_consensus/sac_model_line.h>
+	<pcl/sample_consensus/impl/sac_model_parallel_line.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_parallel_line.hpp
+	<pcl/common/common.h>
+	<pcl/sample_consensus/sac_model_parallel_line.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_sphere.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/impl/sac_model_sphere.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_sphere.hpp
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model_sphere.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_sphere.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/sac_model_sphere.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/common/common.h>
+	<pcl/sample_consensus/impl/sac_model_normal_sphere.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_sphere.hpp
+	<pcl/sample_consensus/sac_model_normal_sphere.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_stick.h
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/common/eigen.h>
+	<pcl/sample_consensus/impl/sac_model_stick.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_stick.hpp
+	<pcl/sample_consensus/sac_model_stick.h>
+	<pcl/common/centroid.h>
+	<pcl/common/concatenate.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/extract_clusters.h
+	<pcl/pcl_base.h>
+	<pcl/search/pcl_search.h>
+	<pcl/segmentation/impl/extract_clusters.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/impl/extract_clusters.hpp
+	<pcl/segmentation/extract_clusters.h>
+
+1488662974 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/Calculations.cpp
+	"Calculations.h"
+
+1488662958 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1488662062 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1487714362 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/Filtering.cpp
+	"Filtering.h"
+
+1487714277 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	"CustomStructures.h"
+
+1487378664 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/IO.cpp
+	"IO.h"
+
+1487378487 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/IO.h
+	<pcl/io/openni_grabber.h>
+	<pcl/visualization/pcl_visualizer.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<string>
+	"CustomStructures.h"
+
+1487855945 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/Processing.cpp
+	"Processing.h"
+
+1487822444 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/Processing.h
+	<vector>
+	<pcl/io/pcd_io.h>
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1489331683 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1489164536 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	"CustomStructures.h"
+
+1487336799 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/Transformations.cpp
+	"Transformations.h"
+
+1487336768 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1489333567 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/EUCLIDEAN CLUSTER EXTRACTION/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+
+1496032632 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1496031449 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<pcl/common/centroid.h>
+	"CustomStructures.h"
+
+1495399554 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1487714362 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1487714277 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	"CustomStructures.h"
+
+1495808663 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/IO.cpp
+	"IO.h"
+
+1495810862 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/IO.h
+	<string>
+	<pcl/io/openni_grabber.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	"CustomStructures.h"
+
+1495425053 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1492102348 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1495131746 /usr/include/ni/XnUSB.h
+	"XnOS.h"
+
+1495399177 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Processing.cpp
+	"Processing.h"
+
+1495394683 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Processing.h
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1495551198 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1495399771 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	"CustomStructures.h"
+	"Object.h"
+
+1492199178 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1492199280 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1488662974 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1488662958 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1489673295 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1487714362 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1487714277 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	"CustomStructures.h"
+
+1492446389 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/IO.cpp
+	"IO.h"
+
+1487378487 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/IO.h
+	<pcl/io/openni_grabber.h>
+	<pcl/visualization/pcl_visualizer.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<string>
+	"CustomStructures.h"
+
+1492546500 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1492102348 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1492199178 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1492199280 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1492191112 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1492190810 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	"CustomStructures.h"
+
+1492622499 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Processing.cpp
+	"Processing.h"
+
+1492618799 /mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Processing.h
+	<vector>
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	"CustomStructures.h"
+
+1492444577 source:/mnt/092901ef-322b-419c-9dd8-52d4d76d0aa0/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/RANSAC/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Transformations.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/extract_indices.h
+	<pcl/filters/filter_indices.h>
+	<pcl/filters/impl/extract_indices.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/extract_indices.hpp
+	<pcl/filters/extract_indices.h>
+	<pcl/common/io.h>
+
+1496087755 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Viewer.h"
+
+1496057527 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Object.cpp
+	"Object.h"
+
+1496032803 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Object.h
+	<vector>
+	<typeinfo>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1499473656 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1499979024 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<pcl/features/normal_3d_omp.h>
+	<pcl/common/centroid.h>
+	"CustomStructures.h"
+
+1495399554 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1499472642 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1499993334 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	<pcl/filters/uniform_sampling.h>
+	"CustomStructures.h"
+	"Calculations.h"
+	"Filtering.h"
+
+1500142817 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/IO.cpp
+	"IO.h"
+
+1500142455 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/IO.h
+	<string>
+	<pcl/io/openni_grabber.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<pcl/point_cloud.h>
+	"CustomStructures.h"
+
+1495425053 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1492102348 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1495399177 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Processing.cpp
+	"Processing.h"
+
+1495394683 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Processing.h
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1495551198 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1495399771 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	"CustomStructures.h"
+	"Object.h"
+
+1496032803 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Object.h
+	<vector>
+	<typeinfo>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1492199178 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1492199280 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1496035603 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/6 - Algorítmos de segmentação/REGION GROWING (RGB E DISTANCIA)/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Viewer.h"
+
+1496057527 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Object.cpp
+	"Object.h"
+
+1496029868 source:/home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Viewer.cpp
+	"Viewer.h"
+
+1496029889 /home/jr/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Viewer.h
+	<string>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+
+1496029889 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Viewer.h
+	<string>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+
+1496029868 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Viewer.cpp
+	"Viewer.h"
+
+1500145332 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/9 - Registration/ICP - Iterative Closest Point/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Viewer.h"
+	"Registering.h"
+
+1499178620 /mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/include/Registering.h
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/registration/icp.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/icp.h
+	<pcl/sample_consensus/ransac.h>
+	<pcl/sample_consensus/sac_model_registration.h>
+	<pcl/registration/registration.h>
+	<pcl/registration/transformation_estimation_svd.h>
+	<pcl/registration/transformation_estimation_point_to_plane_lls.h>
+	<pcl/registration/correspondence_estimation.h>
+	<pcl/registration/default_convergence_criteria.h>
+	<pcl/registration/impl/icp.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/sac_model_registration.h
+	<pcl/sample_consensus/eigen.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/common/eigen.h>
+	<pcl/common/centroid.h>
+	<map>
+	<pcl/sample_consensus/impl/sac_model_registration.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_registration.hpp
+	<pcl/sample_consensus/sac_model_registration.h>
+	<pcl/common/point_operators.h>
+	<pcl/common/eigen.h>
+	<pcl/point_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/common/point_operators.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/registration.h
+	<pcl/pcl_base.h>
+	<pcl/common/transforms.h>
+	<pcl/pcl_macros.h>
+	<pcl/search/kdtree.h>
+	<pcl/kdtree/kdtree_flann.h>
+	<pcl/registration/boost.h>
+	<pcl/registration/transformation_estimation.h>
+	<pcl/registration/correspondence_estimation.h>
+	<pcl/registration/correspondence_rejection.h>
+	<pcl/registration/impl/registration.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/boost.h
+	<boost/graph/graph_traits.hpp>
+	<boost/graph/dijkstra_shortest_paths.hpp>
+	<boost/property_map/property_map.hpp>
+	<boost/unordered_map.hpp>
+	<boost/noncopyable.hpp>
+	<boost/make_shared.hpp>
+	<boost/function.hpp>
+	<boost/bind.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/transformation_estimation.h
+	<pcl/correspondence.h>
+	<pcl/common/transforms.h>
+	<pcl/registration/correspondence_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/correspondence_types.h
+	<pcl/correspondence.h>
+	<pcl/registration/impl/correspondence_types.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/correspondence_types.hpp
+	<limits>
+	<pcl/registration/eigen.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/eigen.h
+	<Eigen/Core>
+	<Eigen/Geometry>
+	<unsupported/Eigen/Polynomials>
+	<Eigen/Dense>
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/Polynomials
+	<Eigen/Core>
+	<Eigen/src/Core/util/DisableStupidWarnings.h>
+	<Eigen/Eigenvalues>
+	"src/Polynomials/PolynomialUtils.h"
+	"src/Polynomials/Companion.h"
+	"src/Polynomials/PolynomialSolver.h"
+	<Eigen/src/Core/util/ReenableStupidWarnings.h>
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialUtils.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/Polynomials/Companion.h
+
+1450298928 /usr/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialSolver.h
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/correspondence_estimation.h
+	<string>
+	<pcl/pcl_base.h>
+	<pcl/common/transforms.h>
+	<pcl/search/kdtree.h>
+	<pcl/pcl_macros.h>
+	<pcl/registration/correspondence_types.h>
+	<pcl/registration/impl/correspondence_estimation.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/correspondence_estimation.hpp
+	<pcl/common/io.h>
+	<pcl/common/copy_point.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/correspondence_rejection.h
+	<pcl/registration/correspondence_types.h>
+	<pcl/registration/correspondence_sorting.h>
+	<pcl/console/print.h>
+	<pcl/common/transforms.h>
+	<pcl/point_cloud.h>
+	<pcl/search/kdtree.h>
+	<pcl/registration/impl/correspondence_rejection.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/correspondence_sorting.h
+	<pcl/registration/correspondence_types.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/correspondence_rejection.hpp
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/registration.hpp
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/transformation_estimation_svd.h
+	<pcl/registration/transformation_estimation.h>
+	<pcl/cloud_iterator.h>
+	<pcl/registration/impl/transformation_estimation_svd.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/transformation_estimation_svd.hpp
+	<pcl/common/eigen.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/transformation_estimation_point_to_plane_lls.h
+	<pcl/registration/transformation_estimation.h>
+	<pcl/registration/warp_point_rigid.h>
+	<pcl/cloud_iterator.h>
+	<pcl/registration/impl/transformation_estimation_point_to_plane_lls.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/warp_point_rigid.h
+	<pcl/registration/eigen.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/transformation_estimation_point_to_plane_lls.hpp
+	<pcl/cloud_iterator.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/default_convergence_criteria.h
+	<pcl/registration/eigen.h>
+	<pcl/correspondence.h>
+	<pcl/registration/convergence_criteria.h>
+	<pcl/registration/impl/default_convergence_criteria.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/convergence_criteria.h
+	<pcl/pcl_macros.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/default_convergence_criteria.hpp
+	<pcl/console/print.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/icp.hpp
+	<pcl/registration/boost.h>
+	<pcl/correspondence.h>
+
+1499178788 source:/mnt/Dropbox/CEFET-MG/Projetos/Iniciação Científica - PCL/2 - Exemplos de ações básicas/LIBRARY/src/Registering.cpp
+	"Registering.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/normal_3d_omp.h
+	<pcl/features/normal_3d.h>
+	<pcl/features/impl/normal_3d_omp.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/features/impl/normal_3d_omp.hpp
+	<pcl/features/normal_3d_omp.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/uniform_sampling.h
+	<pcl/filters/filter.h>
+	<boost/unordered_map.hpp>
+	<pcl/filters/impl/uniform_sampling.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/uniform_sampling.hpp
+	<pcl/common/common.h>
+	<pcl/filters/uniform_sampling.h>
+
+1495425053 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1492102348 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1501176230 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1501176168 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<pcl/features/normal_3d_omp.h>
+	<pcl/common/centroid.h>
+	"CustomStructures.h"
+
+1495399554 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1501171105 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1501171083 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	<pcl/filters/uniform_sampling.h>
+	<pcl/filters/radius_outlier_removal.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/filters/project_inliers.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/radius_outlier_removal.h
+	<pcl/filters/filter_indices.h>
+	<pcl/search/pcl_search.h>
+	<pcl/filters/impl/radius_outlier_removal.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/radius_outlier_removal.hpp
+	<pcl/filters/radius_outlier_removal.h>
+	<pcl/common/io.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/project_inliers.h
+	<pcl/point_types.h>
+	<pcl/filters/filter.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/sample_consensus/sac_model.h>
+	<pcl/sample_consensus/sac_model_circle.h>
+	<pcl/sample_consensus/sac_model_cylinder.h>
+	<pcl/sample_consensus/sac_model_cone.h>
+	<pcl/sample_consensus/sac_model_line.h>
+	<pcl/sample_consensus/sac_model_normal_plane.h>
+	<pcl/sample_consensus/sac_model_normal_sphere.h>
+	<pcl/sample_consensus/sac_model_parallel_plane.h>
+	<pcl/sample_consensus/sac_model_normal_parallel_plane.h>
+	<pcl/sample_consensus/sac_model_parallel_line.h>
+	<pcl/sample_consensus/sac_model_perpendicular_plane.h>
+	<pcl/sample_consensus/sac_model_plane.h>
+	<pcl/sample_consensus/sac_model_sphere.h>
+	<pcl/filters/impl/project_inliers.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/filters/impl/project_inliers.hpp
+	<pcl/filters/project_inliers.h>
+
+1501108729 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/IO.cpp
+	"IO.h"
+
+1500142455 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/IO.h
+	<string>
+	<pcl/io/openni_grabber.h>
+	<pcl/io/pcd_io.h>
+	<pcl/console/parse.h>
+	<pcl/point_cloud.h>
+	"CustomStructures.h"
+
+1501188150 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Object.cpp
+	"Object.h"
+
+1501188115 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Object.h
+	<vector>
+	<typeinfo>
+	<math.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1501187735 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Processing.cpp
+	"Processing.h"
+
+1501187861 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Processing.h
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1501222247 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Registering.cpp
+	"Registering.h"
+
+1501220831 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Registering.h
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/registration/icp.h>
+	<pcl/registration/icp_nl.h>
+
+1501186856 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1501186878 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	<pcl/segmentation/min_cut_segmentation.h>
+	"CustomStructures.h"
+	"Object.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/min_cut_segmentation.h
+	<pcl/segmentation/boost.h>
+	<pcl/pcl_base.h>
+	<pcl/point_cloud.h>
+	<pcl/point_types.h>
+	<pcl/search/search.h>
+	<string>
+	<set>
+	<pcl/segmentation/impl/min_cut_segmentation.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/boost.h
+	<boost/version.hpp>
+	<boost/make_shared.hpp>
+	<boost/graph/adjacency_list.hpp>
+	<boost/multi_array.hpp>
+	<boost/ptr_container/ptr_list.hpp>
+	<boost/graph/boykov_kolmogorov_max_flow.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/segmentation/impl/min_cut_segmentation.hpp
+	<pcl/segmentation/boost.h>
+	<pcl/segmentation/min_cut_segmentation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<stdlib.h>
+	<cmath>
+
+1501190556 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1501190535 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1501222939 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Viewer.cpp
+	"Viewer.h"
+
+1501180974 /mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Viewer.h
+	<string>
+	<boost/thread.hpp>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+
+1501221498 source:/mnt/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/9 - Registration/ICP - Iterative Closest Point/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Viewer.h"
+	"Registering.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/icp_nl.h
+	<pcl/registration/icp.h>
+	<pcl/registration/transformation_estimation_lm.h>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/transformation_estimation_lm.h
+	<pcl/registration/transformation_estimation.h>
+	<pcl/registration/warp_point_rigid.h>
+	<pcl/registration/distances.h>
+	<pcl/registration/impl/transformation_estimation_lm.hpp>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/distances.h
+	<pcl/registration/eigen.h>
+	<vector>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/impl/transformation_estimation_lm.hpp
+	<pcl/registration/warp_point_rigid.h>
+	<pcl/registration/warp_point_rigid_6d.h>
+	<pcl/registration/distances.h>
+	<unsupported/Eigen/NonLinearOptimization>
+
+1465919486 /usr/local/include/pcl-1.8/pcl/registration/warp_point_rigid_6d.h
+	<pcl/registration/warp_point_rigid.h>
+
+1501176230 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1501176168 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<pcl/features/normal_3d_omp.h>
+	<pcl/common/centroid.h>
+	"CustomStructures.h"
+
+1495399554 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1501171105 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1501171083 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	<pcl/filters/uniform_sampling.h>
+	<pcl/filters/radius_outlier_removal.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/filters/project_inliers.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1495425053 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1492102348 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1501188150 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Object.cpp
+	"Object.h"
+
+1501188115 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Object.h
+	<vector>
+	<typeinfo>
+	<math.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1501222247 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Registering.cpp
+	"Registering.h"
+
+1501220831 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Registering.h
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/registration/icp.h>
+	<pcl/registration/icp_nl.h>
+
+1501186856 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1501186878 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	<pcl/segmentation/min_cut_segmentation.h>
+	"CustomStructures.h"
+	"Object.h"
+
+1501190556 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1501190535 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1501223124 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/9 - Registration/ICP - Iterative Closest Point/src/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<sstream>
+	<time.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	"IO.h"
+	"Processing.h"
+	"Filtering.h"
+	"CustomStructures.h"
+	"SegmentationAlgorithms.h"
+	"Calculations.h"
+	"KinectControl.h"
+	"Viewer.h"
+	"Registering.h"
+
+1501254716 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/IO.h
+	<string>
+	<pcl/io/openni_grabber.h>
+	<pcl/io/pcd_io.h>
+	<pcl/io/obj_io.h>
+	<pcl/console/parse.h>
+	<pcl/point_cloud.h>
+	"CustomStructures.h"
+
+1465919486 /usr/local/include/pcl-1.8/pcl/io/obj_io.h
+	<pcl/pcl_macros.h>
+	<pcl/TextureMesh.h>
+	<pcl/PolygonMesh.h>
+	<pcl/io/file_io.h>
+
+1501229521 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Processing.h
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1501225312 /home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/LIBRARY/include/Viewer.h
+	<string>
+	<boost/thread.hpp>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+
