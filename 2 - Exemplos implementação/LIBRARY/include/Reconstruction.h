@@ -26,7 +26,7 @@ class Reconstruction{
         Reconstruction();
         ~Reconstruction();
 
-        static void triangulate(class pcl::PointCloud<T>::Ptr input_cloud,pcl::PolygonMesh::Ptr triangles);
+        static void triangulate(pcl::PointCloud<PXYZ>::Ptr input_cloud,pcl::PolygonMesh::Ptr triangles);
         static void movingLeastSquaresUpsampling(class pcl::PointCloud<T>::Ptr input_cloud,class pcl::PointCloud<T>::Ptr output_cloud,float searchRadius,float upSamplingRadius, float upSamplingStep);
         static void movingLeastSquaresSmoothing(class pcl::PointCloud<T>::Ptr input_cloud,class pcl::PointCloud<T>::Ptr output_cloud,float searchRadius);
 };

@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+  \tikzstyle{format} = [draw, thin]
+  %\draw (0,0) rectangle (1,1) node [pos=0.5] {Mission};
+  %\draw (0,0) rectangle (1,1) node [pos=0.5] {Abstract Architecture};
+  \draw (0,0) node[format] (mis) {Mission};
+  \draw (3,0) node[format] (ab) {Abstract Arch.}; 
+  \draw [->] (mis) edge (ab);
+  \draw (7,0) node[format] (ca) {Concrete Arch.};
+  \draw [->] (ab) edge (ca);
+
+\draw (0,-1) node [draw, thin] (leg) {raffined };
+\end{tikzpicture}

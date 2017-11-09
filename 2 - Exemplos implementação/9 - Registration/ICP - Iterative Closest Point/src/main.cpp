@@ -42,8 +42,8 @@ void keyboardEventOccurred (const pcl::visualization::KeyboardEvent &event, void
   if (event.getKeySym () == "space" && event.keyDown ()){
         io_interface.grabSequencialFrameSensor();
 
-        Filtering<PXYZRGBA>::filterArea(cloud,filtered_cloud,0.5,3.5,"z");
-        Filtering<PXYZRGBA>::voxelize(filtered_cloud,filtered_cloud,Dimension3D(0.04f,0.04f,0.04f));
+        Filtering<PXYZRGBA>::filterArea(cloud,filtered_cloud,0.5,1.5,"z");
+        Filtering<PXYZRGBA>::voxelize(filtered_cloud,filtered_cloud,Dimension3D(0.06f,0.06f,0.06f));
         Filtering<PXYZRGBA>::statisticalOutlierFilter(filtered_cloud,filtered_cloud,10,5.0);
 
         bool converged = false;
@@ -51,7 +51,7 @@ void keyboardEventOccurred (const pcl::visualization::KeyboardEvent &event, void
 
         while(!converged){
             cout<<"ABOUT TO REGISTER"<<endl;
-            converged = registering.registerICP(filtered_cloud,previous_cloud,filtered_cloud,100,0.004f);
+            converged = registering.registerICP(filtered_cloud,previous_cloud,filtered_cloud,200,0.01f);
         }
 
         *main_cloud = *main_cloud + *filtered_cloud;

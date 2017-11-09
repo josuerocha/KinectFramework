@@ -1,0 +1,38 @@
+\newcommand{\labelSystem}{system}
+  \newcommand{\labelMediator}{mediator}
+  \newcommand{\labelCoalition}{coalition}
+  \newlength{\boxWidth}
+  \settowidth{\boxWidth}{\labelSystem}
+  \newlength{\tmp}
+  \settowidth{\tmp}{1..n}
+  \addtolength{\boxWidth}{\tmp}
+  \addtolength{\boxWidth}{2.75em}
+  \newcommand{\msbox}[7]{
+    \node[minimum width=#6,minimum height=#7,draw] (#1) at (#2) {#3};
+    \node[below right,font=\footnotesize,gray] (tmp) at (#1.north west) {#5};
+    \draw (tmp.south west) -- (tmp.south east) -- ([xshift=1ex]tmp.north east);
+    \node[below left,font=\footnotesize,gray] at (#1.north east) {#4};
+  }
+  \newcommand{\system}[4]{\msbox{#1}{#2}{#3}{#4}{\labelSystem}{\boxWidth}{4em}}
+  \newcommand{\mediator}[4]{\msbox{#1}{#2}{#3}{#4}{\labelMediator}{\boxWidth}{2.5em}}
+  \newcommand{\port}[2]{\node[fill=white,draw] (#1) at (#2) {};}
+  \newcommand{\relation}[4]{
+    \draw (#2) -- (#3);
+    \node[above right,font=\footnotesize,gray] at (#2) {#1};
+    \node[above left,font=\footnotesize,gray] at (#3) {#4};
+  }
+  \newcommand{\coalition}[2]{
+    \node[draw,fit=#2,inner sep=1em,dashed] (#1) {};
+    \node[below right,font=\footnotesize,gray] (tmp) at (#1.north west) {\labelCoalition};
+    \draw[dashed] (tmp.south west) -- (tmp.south east) -- ([xshift=1ex]tmp.north east);
+  }
+\newcommand{\added}[1]{#1}
+
+
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+
+    

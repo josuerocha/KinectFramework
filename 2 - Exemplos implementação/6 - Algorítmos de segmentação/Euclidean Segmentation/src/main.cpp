@@ -41,8 +41,20 @@ int main (int argc, char** argv){
 
     Viewer<PXYZRGBA> viewer;
     viewer.addCloud(filtered_cloud);
-    viewer.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
+    viewer.setViewerText("Visualizing segmented cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
 
+    Viewer<PXYZRGBA> viewer2;
+    viewer2.addCloud(filtered_cloud);
+    viewer2.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
+
+    vector<Color> colors;
+    for(unsigned int i=0;i<20;i++){
+        Color color;
+        color.r = (int) (rand() / (RAND_MAX + 1.0f) * 255);
+        color.g = (int) (rand() / (RAND_MAX + 1.0f) * 255);
+        color.b = (int) (rand() / (RAND_MAX + 1.0f) * 255);
+        colors.push_back(color);
+    }
     while(true){
         io.grabSequencialFrameSensor();
 
@@ -61,8 +73,9 @@ int main (int argc, char** argv){
         Object<PXYZRGBA> groundPlane;
         SegmentationAlgorithms::ransac(filtered_cloud,0.01,SACMODEL_PLANE, groundPlane);
         //groundPlane.extractIndices(true,filtered_cloud,filtered_cloud);
-
+        viewer2.showExternalCloud(filtered_cloud);
         SegmentationAlgorithms::euclidean(filtered_cloud,tree,2,1000,0.07f,objects);
+
 
         float minHeight = 30;
         int o = 0;
@@ -76,6 +89,18 @@ int main (int argc, char** argv){
         }
 
         viewer.addArrow(objects[o].getCentroid(),Coord3D(0,0,0),Color(255,0,0,255));
+
+        /*
+        for(unsigned int i=0 ; i<objects.size(); i++){
+
+
+            objects[i].paintCluster(filtered_cloud,colors[i]);
+
+        }
+    */
+
+
+        //viewer.addArrow(objects[o].getCentroid(),Coord3D(0,0,0),Color(255,0,0,255));
 
         cout<<"END . Time taken " << (double)(clock() - tStart)/CLOCKS_PER_SEC << endl;
         cout<<"________________________________________________"<<endl;

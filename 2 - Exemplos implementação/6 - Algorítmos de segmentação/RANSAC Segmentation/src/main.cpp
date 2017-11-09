@@ -37,12 +37,18 @@ int main (int argc, char** argv){
     cloud = io.getCloud_ptr();
 
     Viewer<PXYZRGBA> viewer;
-    viewer.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
+    viewer.setViewerText("Visualizing segmented cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
     viewer.addCloud(filtered_cloud);
+
+    Viewer<PXYZRGBA> viewer2;
+    viewer2.addCloud(filtered_cloud);
+    viewer2.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
 
     KinectControl kinect;
     kinect.Move(31);
-    kinect.Move(-25);
+    kinect.Move(0);
+
+
 
     while(true){
         io.grabSequencialFrameSensor();
@@ -58,11 +64,14 @@ int main (int argc, char** argv){
 
         clock_t tStart = clock();
         Object<PXYZRGBA> object;
-        SegmentationAlgorithms::ransac(filtered_cloud, 0.02,SACMODEL_PLANE,object);
+        SegmentationAlgorithms::ransac(filtered_cloud, 0.01,SACMODEL_PLANE,object);
+
+        viewer2.showExternalCloud(filtered_cloud);
 
         object.paintCluster(filtered_cloud,Color(255,0,0,0));
 
         viewer.showExternalCloud(filtered_cloud);
+
 
         cout<<"END . Time taken " << (double)(clock() - tStart)/CLOCKS_PER_SEC << " seconds" << endl;
         cout<<"________________________________________________"<<endl;

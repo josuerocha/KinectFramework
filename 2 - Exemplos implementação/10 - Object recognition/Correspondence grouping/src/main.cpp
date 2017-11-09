@@ -58,12 +58,12 @@ int main (int argc, char** argv){
     m_thread = boost::thread(updateViewer);
 
     IO<PXYZRGBA> io;
-    io.readFromPCD("shampoo.pcd",model);
-    //io.readFromPCD("scene.pcd",cloud);
+    io.readFromPCD("models/milk.pcd",model);
+    io.readFromPCD("models/scene.pcd",cloud);
 
-    io.setSensorSequencialGrabbing(true);
-    io.grabSequencialFrameSensor();
-    cloud = io.getCloud_ptr();
+    //io.setSensorSequencialGrabbing(true);
+    //io.grabSequencialFrameSensor();
+    //cloud = io.getCloud_ptr();
 
     viewer1.addCloud(model);
     viewer1.setViewerText("Visualizing MODEL cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
@@ -76,9 +76,9 @@ int main (int argc, char** argv){
     CloudandIndices *pointSelectorsPtr = &pointSelectors;
     viewer1.viewer->registerAreaPickingCallback (areaPickingCallback, (void*)pointSelectorsPtr);
 
-    KinectControl kinect;
+    //KinectControl kinect;
 
-    kinect.Move(5);
+    //kinect.Move(5);
 
     clock_t tStart;
 
@@ -87,7 +87,7 @@ int main (int argc, char** argv){
     while(true){
          tStart = clock();
 
-        io.grabSequencialFrameSensor();
+        //io.grabSequencialFrameSensor();
         Filtering<PXYZRGBA>::filterArea(cloud,cloud,0.5,1.5,"z");
         Recognition<PXYZRGBA>::run(model,cloud, output);
         outputReady = true;

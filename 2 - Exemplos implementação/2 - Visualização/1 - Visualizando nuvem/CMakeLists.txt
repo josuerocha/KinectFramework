@@ -11,10 +11,8 @@ add_definitions(${PCL_DEFINITIONS})
 set(PCL_BUILD_TYPE Release)
  
 file(GLOB files
-    "include/*.h"
-    "include/*.cpp"
-    "src/*.cpp"
-    "src/*.h"
+    "*.h"
+    "*.cpp"
 )
 add_executable(execute ${files})
  

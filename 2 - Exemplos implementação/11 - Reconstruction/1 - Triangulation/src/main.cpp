@@ -30,22 +30,22 @@ using namespace pcl;
 
 ///GLOBALS
 PolygonMesh::Ptr reconstructed (new PolygonMesh);
-IO<PXYZRGBA> io_interface;
+IO<PXYZ> io_interface;
 
 ///FUNCTION PROTOTYPES
 void keyboardEventOccurred (const pcl::visualization::KeyboardEvent &event, void* viewer_void);
 
 int main (int argc, char** argv){
 
-    XYZRGBACloud_ptr cloud (new XYZRGBACloud);
-    XYZRGBACloud_ptr filtered_cloud (new XYZRGBACloud);
+    XYZCloud_ptr cloud (new XYZCloud);
+    XYZCloud_ptr filtered_cloud (new XYZCloud);
     XYZCloud_ptr filtered_cloud_xyz (new XYZCloud);
 
     io_interface.setSensorSequencialGrabbing(true);
     io_interface.grabSequencialFrameSensor();
     cloud = io_interface.getCloud_ptr();
 
-    Viewer<PXYZRGBA> viewer("Downsampled");
+    Viewer<PXYZ> viewer("Downsampled");
     viewer.addCloud(filtered_cloud);
     viewer.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
     viewer.viewer->registerKeyboardCallback(keyboardEventOccurred,(void*)viewer.viewer.get ());
@@ -54,18 +54,22 @@ int main (int argc, char** argv){
     //viewer2.addMesh(reconstructed);
     viewer2.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
 
+    io_interface.readFromPCD("bunny.pcd",cloud);
+    Filtering<PXYZ>::voxelize(cloud,cloud,Dimension3D(0.01f,0.01f,0.01f));
+
+    cout<<"TAMANHO " << cloud->size() << endl;
     while(true){
-        io_interface.grabSequencialFrameSensor();
+        //io_interface.grabSequencialFrameSensor();
 
 
 
-        Filtering<PXYZRGBA>::filterArea(cloud,filtered_cloud,0.5,1.5,"z");
-        Filtering<PXYZRGBA>::voxelize(filtered_cloud,filtered_cloud,Dimension3D(0.04f,0.04f,0.04f));
-        Filtering<PXYZRGBA>::statisticalOutlierFilter(filtered_cloud,filtered_cloud,10,5.0f);
+        //Filtering<PXYZ>::filterArea(cloud,filtered_cloud,0.5,1.5,"z");
 
-        Reconstruction<PXYZRGBA>::triangulate(filtered_cloud,reconstructed);
+        //Filtering<PXYZ>::statisticalOutlierFilter(filtered_cloud,filtered_cloud,10,5.0f);
 
-        viewer.showExternalCloud(filtered_cloud);
+        Reconstruction<PXYZ>::triangulate(cloud,reconstructed);
+
+        viewer.showExternalCloud(cloud);
         viewer2.showExternalMesh(reconstructed);
 
     }

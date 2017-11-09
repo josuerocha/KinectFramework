@@ -1,0 +1,23 @@
+Open Eclipse, create a new project, select Project -> Properties -> C/C++ General -> Paths and Symbols and place the paths below in the following tabs:
+
+-Includes:
+
+		/usr/include/eigen3
+		/usr/local/include/pcl-1.8
+		/usr/local/include/vtk-7.1
+		/usr/include/ni
+
+		/usr/lib
+		/usr/local/lib
+
+-Linker settings
+	-go to /usr/lib
+		add all .so files starting in libOpenNI
+
+	-go to /usr/local/lib
+		add all .so files starting in libpcl
+		add all .so files starting in libvtk
+	-go to /usr/lib/x86_64-linux-gnu
+		add libpthread.so
+		add all .so files starting in libboost
+	

@@ -42,7 +42,11 @@ int main (int argc, char** argv)
 
     Viewer<PXYZRGB> viewer;
     viewer.addCloud(colored_cloud);
-    viewer.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
+    viewer.setViewerText("Visualizing segmented cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
+
+    Viewer<PXYZRGBA> viewer2;
+    viewer2.addCloud(filtered_cloud);
+    viewer2.setViewerText("Visualizing live cloud.",Coord2D(30.0,10.0),30.0,Color(1.0f,0.0f,0.0f,1.0f),"text1");
 
     KinectControl kinect;
     kinect.Move(30);
@@ -73,21 +77,21 @@ int main (int argc, char** argv)
         float minHeight = 30;
         int o = 0;
         cout<<"Number of objects: " << objects.size() << endl;
-        for(unsigned int i=0 ; i<objects.size(); i++){
+        /*for(unsigned int i=0 ; i<objects.size(); i++){
             objects[i].highLightClusterHeight(colored_cloud);
             if(objects[i].getHeight() < minHeight){
                 minHeight = objects[i].getHeight();
                 o = i;
             }
-        }
+        }*/
 
-        viewer.addArrow(objects[o].getCentroid(),Coord3D(0,0,0),Color(255,0,0,255));
+        //viewer.addArrow(objects[o].getCentroid(),Coord3D(0,0,0),Color(255,0,0,255));
 
         cout<<"END . Time taken " << (double)(clock() - tStart)/CLOCKS_PER_SEC << endl;
         cout<<"________________________________________________"<<endl;
 
         viewer.showExternalCloud(colored_cloud);
-
+        viewer2.showExternalCloud(filtered_cloud);
 
     }
 

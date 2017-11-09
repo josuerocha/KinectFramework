@@ -1,0 +1,167 @@
+\documentclass{beamer}
+
+
+\usepackage{pgfpages}
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=right}
+\mode<presentation> {
+  \usetheme{Warsaw}
+  % ou autre ...
+
+  \setbeamercovered{transparent}
+  % ou autre chose (il est également possible de supprimer cette ligne)
+}
+
+
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\pgfdeclareimage[height=0.5cm]{le-logo}{logo-irisa}
+\logo{\pgfuseimage{le-logo}}
+\setbeamertemplate{footline}[frame number]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Patterns for SoS Reconfiguration] 
+{Approach Based Patterns for System-of-Systems Reconfiguration}
+%\subtitle {ne compléter que si l'article possède un sous-titre}
+
+\author[Franck, Petitdemange] 
+{F.~Petitdemange\inst{1} \and I.~Borne\inst{1} \and J.~Buisson\inst{2}}
+
+\institute[]
+{
+  \inst{1}%
+  IRISA\\
+  University of South Brittany\\
+  Vannes, France
+  \and
+  \inst{2}%
+  IRISA\\
+  Military Academy of St-Cyr\\
+  Vannes, France}
+
+\date[SESOS 2015] 
+{Software Engineering for Systems-of-Systems, 2015}
+
+
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Plan}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\subsection{SoS Engineering Process}
+\begin{frame}{SoS Engineering Process}
+  %\includegraphics[scale=0.3, angle=-90]{construction-process}
+  \input{figures/fig_engineering-process}
+\end{frame}
+
+\subsection{SoSADL}
+\begin{frame}{Architecture desciption language : SoSADL}
+\begin{description}
+  \item[Constituent System (CS) :] have their own managerial and
+    operational independance while contributing to the global mission
+    of the SoS
+  \item[Mediator :] controled by the SoS. They belong to the
+    SoS. Mediateur are communicating element that specify, coordinate
+    the interaction beetween CSs and SoS control over them.
+  \item[Coalition :] a set of contraints about the CSs and
+    mediator required to accomplish a emergent behavior.
+\end{description}
+\end{frame}
+
+\subsection{Context}
+\begin{frame}{Emergency service SoS}
+\begin{description}
+  \item[Mission :] preserve human life and material
+\end{description}
+\input{figures/fig_emergency-service-exemple}
+\end{frame}
+
+\section{Patterns for SoS reconfiguration}
+\subsection{Motivation}
+\begin{frame}{Need of architectural reconfiguration} 
+  Cause :
+  \begin{itemize}
+  \item managerial and operational independance of the constituents
+  \end{itemize}
+  Consequence :
+  \begin{itemize}
+  \item architecture evolve continuesly
+  \end{itemize}
+  Problems :
+  \begin{itemize}
+  \item determine a set of reconfiguration' operations to maintain architectural pattern in the concrete architecture?
+  \item determine a set of reconfiguration' operations to make evolve the architectural pattern in a coherently way?   
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Architectural pattern}
+  \includegraphics[angle=-90, scale=0.5]{pattern-emergency-service}
+\end{frame}
+
+\begin{frame}{Maintain architectural patterns}
+\includegraphics[angle=-90, scale=0.4]{cas-maintain-pattern}
+\end{frame}
+
+\begin{frame}{Architectural pattern evolutions}
+\includegraphics[angle=-90,scale=0.4]{cas-evolution-pattern}
+\end{frame}
+
+\subsection{Approach}
+\begin{frame}{Patterns for reconfiguration}
+  Approach :
+  \begin{itemize}
+  \item use pattern approach to formalize a set of best practice to assist
+    reconfiguration
+  \end{itemize}
+
+  \begin{itemize}
+  \item based on dedicaded language (SoSADL), describe SoS architecture
+    pattern architectural taking into account SoS characteristics
+  \item express a set of reconfiguration operations associate to this
+    architectural pattern which can express for instance :when, how,
+    for which to add a new CS.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Challenges}
+  \begin{itemize}
+  \item the choice of reconfiguration' operations in order to instanciate or reinstanciate the architectural pattern
+  %\item ... 
+  \end{itemize}
+\end{frame}
+
+
+\section{Related Works}
+
+\begin{frame}{}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Challenge and Futur Work}
+  Challenge : 
+  \begin{itemize}
+  \item
+  \end{itemize}
+
+  Futur Work :
+  \begin{itemize}
+  \item
+  \end{itemize}
+\end{frame}
+
+\end{document}

@@ -14,18 +14,16 @@ Reconstruction<T>::~Reconstruction(){
 }
 
 template <class T>
-void Reconstruction<T>::triangulate(class PointCloud<T>::Ptr input_cloud,PolygonMesh::Ptr triangles){
+void Reconstruction<T>::triangulate(PointCloud<PXYZ>::Ptr input_cloud,PolygonMesh::Ptr triangles){
 
-    XYZCloud_ptr input_cloud_xyz (new XYZCloud);
-    Processing<T>::toXYZ(input_cloud,input_cloud_xyz);
-
+    cout<<"TAMANHO2 " << input_cloud->size() << endl;
     PointCloud<Normal>::Ptr normals(new PointCloud<Normal>);
-    Calculations<PXYZ>::estimateNormalsParallel(input_cloud_xyz,normals,50);
+    Calculations<PXYZ>::estimateNormals(input_cloud,normals,50);
 
 
 
     PointCloud<PointNormal>::Ptr pointNormals (new PointCloud<PointNormal>);
-    concatenateFields (*input_cloud_xyz, *normals, *pointNormals);
+    concatenateFields (*input_cloud, *normals, *pointNormals);
 
     search::KdTree<PointNormal>::Ptr tree (new search::KdTree<PointNormal>);
     tree->setInputCloud (pointNormals);

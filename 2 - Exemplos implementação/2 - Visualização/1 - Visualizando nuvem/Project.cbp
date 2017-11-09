@@ -223,7 +223,6 @@
 		<Unit filename="../../LIBRARY/include/KinectControl.h" />
 		<Unit filename="../../LIBRARY/include/Object.h" />
 		<Unit filename="../../LIBRARY/include/Processing.h" />
-		<Unit filename="../../LIBRARY/include/Recognition.h" />
 		<Unit filename="../../LIBRARY/include/SegmentationAlgorithms.h" />
 		<Unit filename="../../LIBRARY/include/Transformations.h" />
 		<Unit filename="../../LIBRARY/include/Viewer.h" />
@@ -233,11 +232,10 @@
 		<Unit filename="../../LIBRARY/src/KinectControl.cpp" />
 		<Unit filename="../../LIBRARY/src/Object.cpp" />
 		<Unit filename="../../LIBRARY/src/Processing.cpp" />
-		<Unit filename="../../LIBRARY/src/Recognition.cpp" />
 		<Unit filename="../../LIBRARY/src/SegmentationAlgorithms.cpp" />
 		<Unit filename="../../LIBRARY/src/Transformations.cpp" />
 		<Unit filename="../../LIBRARY/src/Viewer.cpp" />
-		<Unit filename="src/main.cpp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
