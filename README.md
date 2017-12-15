@@ -1,7 +1,7 @@
 # PCLFramework
 
 A framework comprising Point Cloud Library's (PCL) resources for point cloud processing, object and people recognition using Kinect. Thirty-seven examples were developed and their results documented.
-
+**Author**: Josué Rocha Lima
 **Advisor**: Odilon Corrêa da Silva
 
 # To do
