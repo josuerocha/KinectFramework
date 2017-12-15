@@ -4,6 +4,9 @@ A framework comprising Point Cloud Library's (PCL) resources for point cloud pro
 **Author**: Josué Rocha Lima
 **Advisor**: Odilon Corrêa da Silva
 
+![alt text](https://github.com/josuerocha/KinectFramework/blob/master/2%20-%20Exemplos%20implementa%C3%A7%C3%A3o/6%20-%20Algor%C3%ADtmos%20de%20segmenta%C3%A7%C3%A3o/REGION%20GROWING%20(RGB%20E%20DISTANCIA)/Results/RegionGrowingRGB.png "Logo Title Text 1")
+
+
 # To do
 - [X] Automated installation script;
 - [X] Kinect motor control;
