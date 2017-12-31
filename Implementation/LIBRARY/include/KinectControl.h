@@ -2,7 +2,7 @@
 #define KINECTCONTROL_H
 
 /** CLASS TO CONTROL KINECT SERVOMOTORS **/
-
+// This code only applies to model 1414. 1473 is not supported.
 //STANDARD INCLUDES
 #include <vector>
 
