@@ -19,3 +19,4 @@ A framework comprising Point Cloud Library's (PCL) resources for point cloud pro
 - [X] Normal vectors estimation;
 - [X] Registration;
 - [X] Segmentation (Euclidean, RANSAC, Region Growing and Min Cut);
+- [ ] Add automatic Kinect model recogmition.
