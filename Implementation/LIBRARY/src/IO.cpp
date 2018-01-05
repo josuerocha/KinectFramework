@@ -7,7 +7,7 @@ template <class T>
 IO<T>::IO(){
     cloud_ptr = typename PointCloud<T>::Ptr(new PointCloud<T>);
     flag_getFromSensor = false;
-    flag_sequencialGrabbing = false;
+    flag_sequentialGrabbing = false;
     initializeGrabber();
 }
 
@@ -61,14 +61,14 @@ class PointCloud<T>::Ptr IO<T>::getCloud_ptr(){
 }
 
 template <class T>
-void IO<T>::setSensorSequencialGrabbing(bool sequencialGrabbing){
-    if(sequencialGrabbing && !flag_sequencialGrabbing){
-        flag_sequencialGrabbing = true;
+void IO<T>::setSensorSequentialGrabbing(bool sequentialGrabbing){
+    if(sequentialGrabbing && !flag_sequentialGrabbing){
+        flag_sequentialGrabbing = true;
         openniGrabber->start();
         cout<<"STARTING"<<endl;
     }
-    else if(!sequencialGrabbing && flag_sequencialGrabbing){
-        flag_sequencialGrabbing = false;
+    else if(!sequentialGrabbing && flag_sequentialGrabbing){
+        flag_sequentialGrabbing = false;
         openniGrabber->stop();
     }
 
@@ -87,7 +87,7 @@ void IO<T>::grabSingleFrameSensor(){
 }
 
 template <class T>
-void IO<T>::grabSequencialFrameSensor(){
+void IO<T>::grabSequentialFrameSensor(){
     flag_getFromSensor = true;
 
     while(flag_getFromSensor){

@@ -2065,7 +2065,7 @@
 	"vtkCommonCoreModule.h"
 	"vtkObjectBase.h"
 
-1504338676 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
+1514316899 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkObjectBase.h
 	"vtkCommonCoreModule.h"
@@ -2096,10 +2096,10 @@
 	"vtkABI.h"
 	<windows.h>
 
-1504338671 /usr/local/include/vtk-7.1/vtkConfigure.h
+1514316896 /usr/local/include/vtk-7.1/vtkConfigure.h
 	"vtkVersionMacros.h"
 
-1504338671 /usr/local/include/vtk-7.1/vtkVersionMacros.h
+1514316896 /usr/local/include/vtk-7.1/vtkVersionMacros.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkABI.h
 
@@ -2117,7 +2117,7 @@
 	"vtkConfigure.h"
 	"vtk_kwiml.h"
 
-1504338665 /usr/local/include/vtk-7.1/vtk_kwiml.h
+1514316891 /usr/local/include/vtk-7.1/vtk_kwiml.h
 	"vtkkwiml/abi.h"
 	"vtkkwiml/int.h"
 
@@ -2139,7 +2139,7 @@
 	"vtkAtomic.h"
 	"vtkType.h"
 
-1504338671 /usr/local/include/vtk-7.1/vtkAtomic.h
+1514316896 /usr/local/include/vtk-7.1/vtkAtomic.h
 	"vtkCommonCoreModule.h"
 	"vtkAtomicTypeConcepts.h"
 	"vtkConfigure.h"
@@ -2252,7 +2252,7 @@
 	"vtkMathConfigure.h"
 	<cassert>
 
-1504338673 /usr/local/include/vtk-7.1/vtkMathConfigure.h
+1514316898 /usr/local/include/vtk-7.1/vtkMathConfigure.h
 	<cmath>
 	<float.h>
 
@@ -2302,7 +2302,7 @@
 	"vtkCommonMathModule.h"
 	"vtkObject.h"
 
-1504338677 /usr/local/include/vtk-7.1/vtkCommonMathModule.h
+1514316899 /usr/local/include/vtk-7.1/vtkCommonMathModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkLookupTable.h
 	"vtkCommonCoreModule.h"
@@ -2334,14 +2334,14 @@
 	"vtkRenderingLODModule.h"
 	"vtkActor.h"
 
-1504338756 /usr/local/include/vtk-7.1/vtkRenderingLODModule.h
+1514316967 /usr/local/include/vtk-7.1/vtkRenderingLODModule.h
 	"vtkRenderingCoreModule.h"
 
-1504338683 /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
+1514316900 /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
 	"vtkFiltersCoreModule.h"
 	"vtkAutoInit.h"
 
-1504338680 /usr/local/include/vtk-7.1/vtkFiltersCoreModule.h
+1514316900 /usr/local/include/vtk-7.1/vtkFiltersCoreModule.h
 	"vtkAutoInit.h"
 
 1479149881 /usr/local/include/vtk-7.1/vtkAutoInit.h
@@ -2415,7 +2415,7 @@
 	"vtkInteractionStyleModule.h"
 	"vtkInteractorStyleTrackballCamera.h"
 
-1504338702 /usr/local/include/vtk-7.1/vtkInteractionStyleModule.h
+1514316914 /usr/local/include/vtk-7.1/vtkInteractionStyleModule.h
 	"vtkRenderingCoreModule.h"
 	"vtkRenderingCoreModule.h"
 	"vtkAutoInit.h"
@@ -2469,7 +2469,7 @@
 	"vtkIdTypeArray.h"
 	"vtkCell.h"
 
-1504338678 /usr/local/include/vtk-7.1/vtkCommonDataModelModule.h
+1514316899 /usr/local/include/vtk-7.1/vtkCommonDataModelModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkIdTypeArray.h
 	"vtkCommonCoreModule.h"
@@ -2488,7 +2488,7 @@
 	"vtkRenderingAnnotationModule.h"
 	"vtkActor2D.h"
 
-1504338702 /usr/local/include/vtk-7.1/vtkRenderingAnnotationModule.h
+1514316914 /usr/local/include/vtk-7.1/vtkRenderingAnnotationModule.h
 	"vtkRenderingCoreModule.h"
 
 1479149881 /usr/local/include/vtk-7.1/vtkActor2D.h
@@ -2504,7 +2504,7 @@
 	"vtkRenderingFreeTypeModule.h"
 	"vtkPolyDataAlgorithm.h"
 
-1504338684 /usr/local/include/vtk-7.1/vtkRenderingFreeTypeModule.h
+1514316901 /usr/local/include/vtk-7.1/vtkRenderingFreeTypeModule.h
 	"vtkRenderingCoreModule.h"
 	"vtkRenderingCoreModule.h"
 	"vtkAutoInit.h"
@@ -2514,7 +2514,7 @@
 	"vtkAlgorithm.h"
 	"vtkPolyData.h"
 
-1504338678 /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
+1514316899 /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkAlgorithm.h
 	"vtkCommonExecutionModelModule.h"
@@ -2572,7 +2572,7 @@
 	"vtkFiltersSourcesModule.h"
 	"vtkPolyDataAlgorithm.h"
 
-1504338683 /usr/local/include/vtk-7.1/vtkFiltersSourcesModule.h
+1514316900 /usr/local/include/vtk-7.1/vtkFiltersSourcesModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkProperty2D.h
 	"vtkRenderingCoreModule.h"
@@ -2582,7 +2582,7 @@
 	"vtkFiltersGeometryModule.h"
 	"vtkPolyDataAlgorithm.h"
 
-1504338683 /usr/local/include/vtk-7.1/vtkFiltersGeometryModule.h
+1514316900 /usr/local/include/vtk-7.1/vtkFiltersGeometryModule.h
 
 1479149881 /usr/local/include/vtk-7.1/vtkPointData.h
 	"vtkCommonDataModelModule.h"
@@ -2717,6 +2717,141 @@
 	"vtkPointSet.h"
 
 1508793924 source:/home/jr/Dropbox/CEFET-MG/Projetos/IniciacaoCientifica-PCL/2 - Exemplos implementação/2 - Visualização/1 - Visualizando nuvem/main.cpp
+	<iostream>
+	<string>
+	<pcl/io/pcd_io.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+	"Filtering.h"
+	"IO.h"
+	"KinectControl.h"
+	"Processing.h"
+	"Viewer.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Calculations.cpp
+	"Calculations.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Calculations.h
+	<iostream>
+	<string>
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/features/normal_3d.h>
+	<pcl/features/normal_3d_omp.h>
+	<pcl/common/centroid.h>
+	"CustomStructures.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/CustomStructures.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/search/search.h>
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Filtering.cpp
+	"Filtering.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Filtering.h
+	<pcl/filters/passthrough.h>
+	<pcl/filters/voxel_grid.h>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/filters/statistical_outlier_removal.h>
+	<pcl/filters/uniform_sampling.h>
+	<pcl/filters/radius_outlier_removal.h>
+	<pcl/ModelCoefficients.h>
+	<pcl/filters/project_inliers.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1515135071 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/IO.cpp
+	"IO.h"
+
+1515134915 /home/jr/KinectFramework/Implementation/LIBRARY/include/IO.h
+	<string>
+	<pcl/io/openni_grabber.h>
+	<pcl/io/pcd_io.h>
+	<pcl/io/obj_io.h>
+	<pcl/console/parse.h>
+	<pcl/point_cloud.h>
+	"CustomStructures.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/KinectControl.cpp
+	"KinectControl.h"
+	<iostream>
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/KinectControl.h
+	<vector>
+	<boost/thread.hpp>
+	<boost/date_time/posix_time/posix_time.hpp>
+	<XnUSB.h>
+	<XnTypes.h>
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Object.cpp
+	"Object.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Object.h
+	<vector>
+	<typeinfo>
+	<math.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+	"Calculations.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Processing.cpp
+	"Processing.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Processing.h
+	<pcl/io/pcd_io.h>
+	<pcl/filters/extract_indices.h>
+	<pcl/features/normal_3d.h>
+	"CustomStructures.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/SegmentationAlgorithms.cpp
+	"SegmentationAlgorithms.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/SegmentationAlgorithms.h
+	<vector>
+	<pcl/point_types.h>
+	<pcl/point_cloud.h>
+	<pcl/point_representation.h>
+	<pcl/segmentation/region_growing.h>
+	<pcl/segmentation/region_growing_rgb.h>
+	<pcl/search/search.h>
+	<pcl/search/kdtree.h>
+	<pcl/sample_consensus/method_types.h>
+	<pcl/sample_consensus/model_types.h>
+	<pcl/segmentation/sac_segmentation.h>
+	<pcl/segmentation/extract_clusters.h>
+	<pcl/segmentation/min_cut_segmentation.h>
+	"CustomStructures.h"
+	"Object.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Transformations.cpp
+	"Transformations.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Transformations.h
+	<pcl/common/transforms.h>
+	"CustomStructures.h"
+
+1515131328 source:/home/jr/KinectFramework/Implementation/LIBRARY/src/Viewer.cpp
+	"Viewer.h"
+
+1515131328 /home/jr/KinectFramework/Implementation/LIBRARY/include/Viewer.h
+	<string>
+	<boost/thread.hpp>
+	<pcl/visualization/pcl_visualizer.h>
+	"CustomStructures.h"
+
+1515133516 source:/home/jr/KinectFramework/Implementation/2 -visualization/1 - Visualizando nuvem/main.cpp
 	<iostream>
 	<string>
 	<pcl/io/pcd_io.h>

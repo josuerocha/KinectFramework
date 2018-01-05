@@ -29,7 +29,7 @@ class IO
 
         ///CONTROL FLAGS
         bool flag_getFromSensor;
-        bool flag_sequencialGrabbing;
+        bool flag_sequentialGrabbing;
 
         ///INITIALIZATION
         void initializeGrabber();
@@ -49,10 +49,10 @@ class IO
         void writeToPLY(std::string filename,pcl::PolygonMesh::Ptr mesh);
 
         ///GRABBER CONFIG
-        void setSensorSequencialGrabbing(bool sequencialGrabbing);
+        void setSensorSequentialGrabbing(bool sequentialGrabbing);
 
         ///SINGLE FRAME GRABBERS
-        void grabSequencialFrameSensor();
+        void grabSequentialFrameSensor();
         void grabSingleFrameSensor();
 
         ///GETTER

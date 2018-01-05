@@ -27,19 +27,25 @@ int main(){
 
     //io_interface.readFromPCD("milk.pcd",cloud);
     //io_interface.readFromPCD("scene.")
-    io_interface.setSensorSequencialGrabbing(true);
+    io_interface.setSensorSequentialGrabbing(true);
     cloud = io_interface.getCloud_ptr();
 
     Viewer<PXYZRGBA> viewer;
     viewer.addCloud(cloud);
 
-    //KinectControl kinect;
-    //kinect.Move(10);
+    KinectControl kinect;
+    kinect.Move(30);
+    kinect.Move(-30);
     while(true){
-        io_interface.grabSequencialFrameSensor();
-        Filtering<PXYZRGBA>::filterArea(cloud,cloud,0.5,1.9,"z");
+        cout<< "GRABBING" << endl;
+
+        io_interface.grabSequentialFrameSensor();
+
+        cout<< "GRABBED" << endl;
+
         viewer.showExternalCloud(cloud);
 
+        cout << "SHOWED" << endl;
     }
 
     return 0;
